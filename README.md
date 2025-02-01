@@ -11,3 +11,10 @@ deepen their wine knowledge.
 
 It also empowers the users of all levels, whether you are seeking new varieties, or simply looking to enhance your knowledge. Its detailed information and vast library/ inventory to guide users on their wine
 journey.
+
+## User goals 
+
+* **Wine Enthusiast:** A user who wants to find a good wine - this is the primary goal.
+* **Learn about wine:**  User wants to increase his knowledge through searching the wine  and explore 
+recommendations.
+* **Discover new varietals:** Users may want to expand their palates and try wines they wouldn't normally consider.
