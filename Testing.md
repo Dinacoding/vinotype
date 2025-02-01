@@ -4,3 +4,4 @@
 |-------------------------------------------------------------------|---------------------|-----------------------------------------------|
 | Meta Tags are descriptive and they are present in file page | Yes                 | They are present and cohesive.                |
 | Favicon is displaying correctly on the tab| Yes                | It is displaying and functional
+|
