@@ -34,5 +34,9 @@ recommendations.
 2. Contains the links for the wines on the right.
 3. Includes a button to switch the language other than English 
 
+- Search bar, it is on the content area in the Hero Section 
+1. It allows the user to search for the wine using the name, the region or information about the wine.
+2. It provides a quick and easy way to find the information
+
 
 ## UX 
