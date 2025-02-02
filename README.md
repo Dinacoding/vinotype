@@ -26,5 +26,13 @@ recommendations.
 * **As a Wine Enthusiast**, I want to learn more about the wines recommended to me so that I can deepen my knowledge and appreciation of wine.
 
 
+## Features 
+
+- Navigation bar, responsive for different screen devices and it is position on the top of the webpage. 
+
+1. Features the logo on the left 
+2. Contains the links for the wines on the right.
+3. Includes a button to switch the language other than English 
+
 
 ## UX 
