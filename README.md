@@ -2,6 +2,9 @@
 
 Vinotype is your pocket sommelier, helping you discover wines you will absolutely love. Our personalized recommendations and notes unlock a world of delicious wines, ensuring every bottle is a delightful discovery. Experience the joy of finding wines you truly adore with Vinotype.
 
+
+Logo ![doumentation/vinotype.png]
+
 ## Target Audience
 
 Vinotype's target audience spans a wide range of individuals with ages between 24-65. It is categorised by three distinct groups Wine lovers and explorers that seek new discoveries and personalised recommendations, Wine Enthusiasts that enjoy wine in social occasions and for Wine retail professionals.
@@ -35,8 +38,11 @@ recommendations.
 3. Includes a button to switch the language other than English 
 
 - Search bar, it is on the content area in the Hero Section 
+
 1. It allows the user to search for the wine using the name, the region or information about the wine.
 2. It provides a quick and easy way to find the information
+
+- 
 
 
 ## UX 
