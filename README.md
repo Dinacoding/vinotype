@@ -25,25 +25,25 @@ recommendations.
 
 ## User Stories 
 * **As a Wine Enthusiast**, I want to search about my wine preferences so that I can receive personalized recommendations for new wines to try.
-* **As an Occasional Wine Drinker**, I want to easily find wines that are generally considered "the best" so that I can impress my guests at a dinner party.**
-* **As a Restaurant Owner**, I want to use Vinotype to identify wines that will appeal to my target guests and clients and complement my menu so that I can create a compelling wine list.**
+* **As an Occasional Wine Drinker**, I want to easily find wines that are generally considered "the best" so that I can impress my guests at a dinner party.
+* **As a Restaurant Owner**, I want to use Vinotype to identify wines that will appeal to my target guests and clients and complement my menu so that I can create a compelling wine list.
 * **As a Wine Enthusiast**, I want to learn more about the wines recommended to me so that I can deepen my knowledge and appreciation of wine.
 
 
 ## Features 
 
-- Navigation bar, responsive for different screen devices and it is position on the top of the webpage. 
+1. Navigation bar, responsive for different screen devices and it is position on the top of the webpage. 
 
-1. Features the logo on the left 
-2. Contains the links for the wines on the right.
-3. Includes a button to switch the language other than English 
+- Features the logo on the left 
+- Contains the links for the wines on the right.
+- Includes a button to switch the language other than English 
 
-- Search bar, it is on the content area in the Hero Section 
+2. Search bar, it is on the content area in the Hero Section 
 
-1. It allows the user to search for the wine using the name, the region or information about the wine.
-2. It provides a quick and easy way to find the information
+- It allows the user to search for the wine using the name, the region or information about the wine.
+-  It provides a quick and easy way to find the information
 
-- 
+3.
 
 
 ## UX 
