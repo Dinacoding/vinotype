@@ -51,6 +51,16 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 3. 
 
 
+### Wireframes
+- Phone
+![Hero and Search](documentation/vinotype-wireframes/vinotype-wireframe-ph.png)
+![Wine Card](documentation/vinotype-wireframes/vinotype-wireframe-ph-card.png)
+![Region Card](documentation/vinotype-wireframes/vinotype-wireframe-ph-region.png)
+![Newletter](documentation/vinotype-wireframes/vinotype-wireframe-newsletter.png)
+![Result and Card](documentation/vinotype-wireframes/vinotype-wireframe-result-card.png)
+
+
+
 ## Designer Choices
 
 ### Color scheme
