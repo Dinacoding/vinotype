@@ -46,9 +46,16 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 2. Search bar, it is on the content area in the Hero Section 
 
 - It allows the user to search for the wine using the name, the region or information about the wine.
--  It provides a quick and easy way to find the information
+- It provides a quick and easy way to find the information
 
-3. 
+3. Wine and Regions Card
+- Interactive images allow users to navigate directly to specific categories with a single click.
+- By clicking on an image, users are seamlessly directed to the corresponding category page, either the wine or region.
+
+4. Newsletter
+- Offers subscribers access to content that is not available to the general public
+- A submit form in case the user wants to sign it.
+- It will direct the user to a Thank You page. 
 
 
 ### Wireframes
