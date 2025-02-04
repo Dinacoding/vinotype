@@ -66,7 +66,11 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 ![Newletter](documentation/vinotype-wireframes/vinotype-wireframe-tb-newsletter.png)
 ![Result and Card](documentation/vinotype-wireframes/vinotype-wireframe-tb-result-card.png)
 
-
+- Desktop
+![Hero and Search](documentation/vinotype-wireframes/vinotype-wireframe-desk.png)
+![Wine Card and Wine Regions](documentation/vinotype-wireframes/vinotype-wireframe-desk-wine-region.png)
+![Newletter](documentation/vinotype-wireframes/vinotype-wireframe-desk-newsletter.png)
+![Result and Card](documentation/vinotype-wireframes/vinotype-wireframe-desk-result-card.png)
 
 ## Designer Choices
 
