@@ -48,7 +48,7 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 - It allows the user to search for the wine using the name, the region or information about the wine.
 -  It provides a quick and easy way to find the information
 
-3.
+3. 
 
 
 ## Designer Choices
