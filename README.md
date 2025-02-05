@@ -31,6 +31,8 @@ recommendations.
 
 ### Scenarios
 
+![Flowchart](documentation/website-flowchart.png)
+
 1. **The user enters a wine name**
 - The input is valid, the system proceeds with the search.
 - If valuable data is found, the system proceeds.
@@ -58,6 +60,7 @@ recommendations.
 - The user tries again with another invalid input.
 - The system repeats the message.
 - If the user continuously enters invalid names, the system could suggest trying alternative keywords or give a more detailed error message.
+
 
 
 
