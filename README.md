@@ -1,5 +1,8 @@
 # Vinotype
 
+
+![Logo](documentation/vinotype.png)
+
 Vinotype is your pocket sommelier, helping you discover wines you will absolutely love. Our personalised recommendations and notes unlock a world of delicious wines, ensuring every bottle is a delightful discovery. Experience the joy of finding wines you truly adore with Vinotype.
 
 
@@ -68,7 +71,6 @@ recommendations.
 Vinotype is a web searcher website designed for a practical and fast online searcher. It's functionalities and features are clean and responsive and a search bar will be present and a results display section. Users will be able to select other languages than English. The website will integrate a Internal API built with few wines from different regions, and will provide rating and reviews and a description. It will be built using HTML, CSS and JavaScript. For searching the user can use the wine name, the region or use the type of wine, the results and suggestions will appear on a dropdown below the bar. 
 Vinotype ensures a smooth functionality. The website will be deployed via GitHub.
 
-![Logo](documentation/vinotype.png)
 
 ## Features 
 
