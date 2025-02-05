@@ -29,8 +29,40 @@ recommendations.
 * **As a Restaurant Owner**, I want to use Vinotype to identify wines that will appeal to my target guests and clients and complement my menu so that I can create a compelling wine list.
 * **As a Wine Enthusiast**, I want to learn more about the wines recommended to me so that I can deepen my knowledge and appreciation of wine.
 
+### Scenarios
+
+1. **The user enters a wine name**
+- The input is valid, the system proceeds with the search.
+- If valuable data is found, the system proceeds.
+- If the search returns useful data, the user is given the option to "Learn more about the wine."
+- After learning more about the wine, the user is presented with a "Wine Card."
+- The user has the option to go back to search if needed.
+
+2. **User enters a correct wine name but finds insufficient details:**
+- The user enters a valid wine name.
+- The system searches for results.
+- The system finds data but determines it is "No valuable data."
+- The user is informed that no valuable data exists.
+- The user is redirected back to the search to try again.
+
+3. **User searches for a wine, explores details, but decides to search again**
+- The user enters a valid wine name.
+- The system finds valuable data.
+- The user selects "Learn More about the wine."
+- The user views the Wine Card but decides to go Back to Search instead of proceeding further.
+- The system returns to the search step for another attempt.
+
+4. **User repeatedly enters invalid wine names**
+- The user enters an incorrect or invalid wine name.
+- The system displays a message: "Please enter a valid wine name."
+- The user tries again with another invalid input.
+- The system repeats the message.
+- If the user continuously enters invalid names, the system could suggest trying alternative keywords or give a more detailed error message.
+
+
+
 ## Planning 
-Vinotype is a web searcher website designed for a practical and fast online searcher. It's functionalities and features are clean and responsive and a search bar will be present and a results display section. Users will be able to select other languages than English. The website will integrate a Vivino API, that provides rating and reviews and has an extensive database. It will be built using HTML, CSS and JavaScript. For searching the user can use the wine name, the region or use the type of wine, the results and suggestions will appear on a dropdown below the bar. 
+Vinotype is a web searcher website designed for a practical and fast online searcher. It's functionalities and features are clean and responsive and a search bar will be present and a results display section. Users will be able to select other languages than English. The website will integrate a Internal API built with few wines from different regions, and will provide rating and reviews and a description. It will be built using HTML, CSS and JavaScript. For searching the user can use the wine name, the region or use the type of wine, the results and suggestions will appear on a dropdown below the bar. 
 Vinotype ensures a smooth functionality. The website will be deployed via GitHub.
 
 ![Logo](documentation/vinotype.png)
@@ -58,20 +90,17 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 ![Hero and Search](documentation/vinotype-wireframes/vinotype-wireframe-ph.png)
 ![Wine Card](documentation/vinotype-wireframes/vinotype-wireframe-ph-card.png)
 ![Region Card](documentation/vinotype-wireframes/vinotype-wireframe-ph-region.png)
-![Newletter](documentation/vinotype-wireframes/vinotype-wireframe-newsletter.png)
 ![Result and Card](documentation/vinotype-wireframes/vinotype-wireframe-result-card.png)
 
 - Tablet
 ![Hero and Search](documentation/vinotype-wireframes/vinotype-wireframe-tb.png)
 ![Wine Card](documentation/vinotype-wireframes/vinotype-wireframe-tb-wine.png)
 ![Region Card](documentation/vinotype-wireframes/vinotype-wireframe-tb-region.png)
-![Newletter](documentation/vinotype-wireframes/vinotype-wireframe-tb-newsletter.png)
 ![Result and Card](documentation/vinotype-wireframes/vinotype-wireframe-tb-result-card.png)
 
 - Desktop
 ![Hero and Search](documentation/vinotype-wireframes/vinotype-wireframe-desk.png)
 ![Wine Card and Wine Regions](documentation/vinotype-wireframes/vinotype-wireframe-desk-wine-region.png)
-![Newletter](documentation/vinotype-wireframes/vinotype-wireframe-desk-newsletter.png)
 ![Result and Card](documentation/vinotype-wireframes/vinotype-wireframe-desk-result-card.png)
 
 ## Designer Choices
