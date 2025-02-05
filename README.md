@@ -52,11 +52,6 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 - Interactive images allow users to navigate directly to specific categories with a single click.
 - By clicking on an image, users are seamlessly directed to the corresponding category page, either the wine or region.
 
-4. Newsletter
-- Offers subscribers access to content that is not available to the general public
-- A submit form in case the user wants to sign it.
-- It will direct the user to a Thank You page. 
-
 
 ### Wireframes
 - Phone
@@ -86,3 +81,6 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 ![Palette](documentation/color-palette.png)
 
 This color scheme summons the world of wine and  creates a sophisticated user experience. The deep Wine Red primary color symbolises the passion and depth associated with wine. The Aged Oak secondary color adds a touch of natural elegance. The soft Rose Beige accents provide a warm and inviting touch, while the Charcoal Black background creates a sleek and modern backdrop. This combination of colors not only aligns with the theme of your wine-focused website but also ensures a user-friendly experience with high contrast and readability.
+
+
+
