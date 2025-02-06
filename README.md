@@ -90,7 +90,7 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 - By clicking on an image, users are seamlessly directed to the corresponding category page, either the wine or region.
 
 
-### Wireframes
+## Wireframes
 - Phone
 ![Hero and Search](documentation/vinotype-wireframes/vinotype-wireframe-ph.png)
 ![Wine Card](documentation/vinotype-wireframes/vinotype-wireframe-ph-card.png)
