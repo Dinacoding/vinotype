@@ -125,7 +125,7 @@ This color scheme summons the world of wine and  creates a sophisticated user ex
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), for structure and content writting;
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), for styling and some visual effects;
-- [JavaScript](http), for interactive elements, dynamic behavior, and enhancing user experience.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), for interactive elements, dynamic behavior, and enhancing user experience.
 - [Bootstrap](https://getbootstrap.com/), help me with the structuration and with the layout planning;
 - [GoogleFonts](https://fonts.google.com/), use to import the fonts into my project;
 - [Inkscape](https://inkscape.org/), to design the logo;
