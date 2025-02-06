@@ -118,3 +118,17 @@ This color scheme summons the world of wine and  creates a sophisticated user ex
 
 
 
+### Typography
+
+
+## Technology used
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), for structure and content writting;
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), for styling and some visual effects;
+- [JavaScript](http), for interactive elements, dynamic behavior, and enhancing user experience.
+- [Bootstrap](https://getbootstrap.com/), help me with the structuration and with the layout planning;
+- [GoogleFonts](https://fonts.google.com/), use to import the fonts into my project;
+- [Inkscape](https://inkscape.org/), to design the logo;
+- [Balsamiq](https://balsamiq.com/), used it to wireframe the webpages;
+- [ChatGPT](https://chatgpt.com/), to use it to create content for the website and get me a color palette 
+- [W3school] (https://www.w3schools.com/) to review some concepts about code;
