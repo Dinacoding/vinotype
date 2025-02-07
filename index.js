@@ -18,12 +18,12 @@ fetch('wines.json')
 .then(data => {
     const wines = data;
 
-    function searchWines(){
+    function searchWines() {
         const searchIt = document.getElementById("search");
         const resultsOn = document.getElementById("results");
         resultsOn.innerHTML = '';
 
-        const findWines = wines.fileter(wine => {
+        const findWines = wines.filter(wine => {
             return( 
                 wine.name.toLowerCase().includes(searchIt) ||
                 wine.country.toLowerCase().includes(searchOn)

@@ -1,4 +1,4 @@
-const wines = [{
+[{
     "name": "Vega Sicilia Único",
     "grape": "Tempranillo",
     "year": 2015,
@@ -191,5 +191,3 @@ const wines = [{
     "description": "A traditional Italian dessert wine with dried fruit and almond notes."
   }
 ]
-
-const jsonData = JSON.stringify(wines)
