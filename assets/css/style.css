@@ -41,3 +41,20 @@
     text-decoration: none;
     color: var(--pure-white);
 }
+
+/*menu toogle*/
+
+.menu-toogle{
+    display: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+    }
+}
