@@ -9,4 +9,4 @@ menuToogle.addEventListener('click', () => {
 });
 
 
-module.exports = { toggleMenu };
+module.exports = { toggleMenu, searchBar };

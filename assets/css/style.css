@@ -57,12 +57,18 @@ body{
 }
 .search-wrapper{
     width: 100%;
+    background: url('../css/images/hero-img.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .search-wrapper .search-bar{
    height: 80vh;
    display: flex;
    align-items: center;
    justify-content: center;
+   gap: 8px;
 }
 .search-bar input{
     border-radius:10px;
