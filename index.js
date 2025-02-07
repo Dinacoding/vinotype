@@ -35,9 +35,9 @@ fetch('wines.json')
                 const card = document.createElement("div");
                 card.classList.add("card-box");
                 card.innerHTML = `
-                <div class="card-wrapper`>
-                <h3 class="card-title">${wine.name} (${wine.year})</h3>
-                
+                <div class="card-wrapper">
+                <h3 class="card-title">${wine.name} (${wine.year})</h3>`
+
             })
         }
 
