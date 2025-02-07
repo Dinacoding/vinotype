@@ -47,14 +47,23 @@
 .menu-toogle{
     display: none;
     background: none;
-    font-size: 30px;
+    font-size: 50px;
     cursor: pointer;
+    color: #7B1E2B;
 }
 
 /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
+    .logo img {
+        height: 70px; 
+    }
     .nav-list {
         display: none;
         flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 70px;
+        display: block;
     }
 }
