@@ -1,0 +1,10 @@
+let wines = [
+    { "name": "Vega Sicilia Único", "grape": "Tempranillo", "year": 2015, "color": "Red", "country": "Spain", "description": "A legendary Spanish red wine with deep complexity and elegant aging potential." },
+    { "name": "La Rioja Alta Gran Reserva 904", "grape": "Tempranillo, Graciano", "year": 2015, "color": "Red", "country": "Spain", "description": "Aged Rioja with velvety tannins and hints of tobacco and dark berries." },
+    { "name": "Quinta do Crasto Reserva", "grape": "Touriga Nacional", "year": 2020, "color": "Red", "country": "Portugal", "description": "A bold and structured Portuguese red with rich black fruit and spice notes." },
+    { "name": "Château Margaux", "grape": "Cabernet Sauvignon", "year": 2016, "color": "Red", "country": "France", "description": "One of Bordeaux’s finest, known for its elegance, silky tannins, and aging potential." },
+    { "name": "Albariño Pazo de Señorans", "grape": "Albariño", "year": 2021, "color": "White", "country": "Spain", "description": "A fresh and aromatic white wine with citrus and floral notes." },
+    { "name": "Chablis Premier Cru", "grape": "Chardonnay", "year": 2020, "color": "White", "country": "France", "description": "A crisp and mineral-driven Chardonnay from the Burgundy region." },
+    { "name": "Moët & Chandon Brut Impérial", "grape": "Chardonnay", "year": 2018, "color": "Sparkling", "country": "France", "description": "A famous French Champagne with fine bubbles and creamy elegance." },
+    { "name": "Málaga Virgen Dulce", "grape": "Pedro Ximénez", "year": 2018, "color": "Sweet", "country": "Spain", "description": "A luscious Spanish dessert wine with notes of dried fruits and caramel." }
+];
