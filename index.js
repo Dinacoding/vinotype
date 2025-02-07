@@ -36,14 +36,19 @@ fetch('wines.json')
                 card.classList.add("card-box");
                 card.innerHTML = `
                 <div class="card-wrapper">
-                <h3 class="card-title">${wine.name} (${wine.year})</h3>`
-
-            })
+                <h3 class="card-title">${wine.name} (${wine.year})</h3>
+                    <p class="card-text">${wine.grape} - ${wine.country}</p>
+                    <p class="card-text">${wine.description}</p>
+                </div>`;
+                resultsOn.appendChild(card.box);
+            });
+        }else{
+            resultsBox.innerHTML = '<p>No wines found.</p>';  
         }
-
-
     }
-})
+});
+
+
 results.innerHTML = searchResult; 
 
 module.exports = { toggleMenu, searchBar };
