@@ -55,7 +55,19 @@ body{
     cursor: pointer;
     color: var(--warm-beige);
 }
-
+.search-wrapper{
+    width: 100%;
+}
+.search-wrapper .search-bar{
+   height: 80vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.search-bar input{
+    border-radius:10px;
+    width: 80%;
+}
 /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
     .logo img {
@@ -82,5 +94,10 @@ body{
 
     .menu-toggle{
         display: block;
+    }
+    
+    .search-bar input{
+        font-size: 10px;
+        padding: 4px;
     }
 }
