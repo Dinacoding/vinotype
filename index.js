@@ -47,8 +47,3 @@ fetch('wines.json')
         }
     }
 });
-
-
-results.innerHTML = searchResult; 
-
-module.exports = { toggleMenu, searchBar };
