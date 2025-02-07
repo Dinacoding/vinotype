@@ -7,3 +7,6 @@ menuToogle.addEventListener('click', () => {
     navList.classList.toggle('appear');
 
 });
+
+
+module.exports = { toggleMenu };

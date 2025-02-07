@@ -76,7 +76,8 @@ body{
         transform: translateX(0);
         width: 200px;
         background-color:var(--deep-red);
-        gap:10px
+        gap:10px;
+        
     }
 
     .menu-toggle{
