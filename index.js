@@ -19,11 +19,29 @@ fetch('wines.json')
     const wines = data;
 
     function searchWines(){
-        const searchIt = document.getElementById("serach");
+        const searchIt = document.getElementById("search");
         const resultsOn = document.getElementById("results");
         resultsOn.innerHTML = '';
 
-        
+        const findWines = wines.fileter(wine => {
+            return( 
+                wine.name.toLowerCase().includes(searchIt) ||
+                wine.country.toLowerCase().includes(searchOn)
+            );
+        });
+
+        if (findWines.lenght > 0 ) {
+            findWines.forEach(wine => {
+                const card = document.createElement("div");
+                card.classList.add("card-box");
+                card.innerHTML = `
+                <div class="card-wrapper`>
+                <h3 class="card-title">${wine.name} (${wine.year})</h3>
+                
+            })
+        }
+
+
     }
 })
 results.innerHTML = searchResult; 
