@@ -8,5 +8,24 @@ menuToogle.addEventListener('click', () => {
 
 });
 
+// Example: Displaying a search result
+const resultsBox = document.querySelector('.results');
+const searchResult = "Your search results here.";
+
+
+fetch('wines.json')
+.then(response => response.json())
+.then(data => {
+    const wines = data;
+
+    function searchWines(){
+        const searchIt = document.getElementById("serach");
+        const resultsOn = document.getElementById("results");
+        resultsOn.innerHTML = '';
+
+        
+    }
+})
+results.innerHTML = searchResult; 
 
 module.exports = { toggleMenu, searchBar };
