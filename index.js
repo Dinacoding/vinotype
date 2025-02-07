@@ -23,14 +23,16 @@ fetch('wines.json')
         const resultsOn = document.getElementById("results");
         resultsOn.innerHTML = '';
 
+        const searchValue = searchIt.value.toLowerCase();
+
         const findWines = wines.filter(wine => {
             return( 
                 wine.name.toLowerCase().includes(searchIt) ||
-                wine.country.toLowerCase().includes(searchOn)
+                wine.country.toLowerCase().includes(searchValue)
             );
         });
 
-        if (findWines.lenght > 0 ) {
+        if (findWines.length > 0 ) {
             findWines.forEach(wine => {
                 const card = document.createElement("div");
                 card.classList.add("card-box");
@@ -40,10 +42,12 @@ fetch('wines.json')
                     <p class="card-text">${wine.grape} - ${wine.country}</p>
                     <p class="card-text">${wine.description}</p>
                 </div>`;
-                resultsOn.appendChild(card.box);
+                resultsOn.appendChild(card);
             });
         }else{
-            resultsBox.innerHTML = '<p>No wines found.</p>';  
+            resultsOn.innerHTML = '<p>No wines found.</p>';  
         }
     }
+
+    window.searchWines = searchWines;
 });
