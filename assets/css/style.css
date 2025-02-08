@@ -72,6 +72,7 @@ body{
    align-items: center;
    justify-content: center;
    gap: 8px;
+   transition: width 0.3s ease;
 }
 
 .search-bar {
@@ -89,6 +90,7 @@ body{
     outline: none;
     font-size: 16px;
     border-radius: 10px;
+    position: relative;
 
 }
 
@@ -99,33 +101,38 @@ body{
 
 .results{
     position: absolute;
-    top: 100%;
-    padding: 10px; 
-    margin: 20px; 
+    top: 0;
     border-radius: 5px; 
     padding: 10px;
     display: none; 
 }
 
+/* JavaScript code */
 .card-box{
-    padding:20px;
-    z-index: 10;
-    background-color: black;
+    background-color: var(--warm-beige);
+    width:100%;
+
 
 }
 .card-box:last-child {
     border-bottom: none;
 }
+.card-wrapper{
+    width: 80%;
+    margin: 10px auto;
+    
+}
 
 .card-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 .card-text {
-    font-size: 14px;
+    font-size: 12px;
 }
 
+/* end of JavaScript code*/
 
 /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
@@ -156,7 +163,19 @@ body{
     }
     
     .search-bar input{
-        font-size: 10px;
-        padding: 4px;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .search-bar button{
+        padding: 8px;
+
+    }
+}
+
+@media (max-width: 992px) {
+    
+    .search-bar {
+      width: 500px; 
     }
 }

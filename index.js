@@ -8,17 +8,22 @@ menuToogle.addEventListener('click', () => {
 
 });
 
+// Search bar height changes accordingly with the content
+
 const searchInput = document.querySelector('.search-bar input');
+const searchBar = document.getElementById('search-bar');
 const resultsBox = document.querySelector('.results');
 
 searchInput.addEventListener('input', function() {
+    searchInput.classList.add('expanded');
     resultsBox.style.display = 'block';
 
     if (searchInput.value.trim() === '') {
+        searchBar.classList.remove('expanded');
         resultsBox.style.display = 'none';
     }
 
-    resultsBox.innerHTML = '<div>Result 1</div><div>Result 2</div>';
+    resultsBox.innerHTML = '';
 });
 
 
@@ -56,8 +61,6 @@ function searchWines() {
             card.innerHTML = `
                 <div class="card-wrapper">
                 <h3 class="card-title">${wine.name} (${wine.year})</h3>
-                    <p class="card-text">${wine.grape} - ${wine.country}</p>
-                    <p class="card-text">${wine.description}</p>
                 </div>`;
             resultsOn.appendChild(card);
         });
