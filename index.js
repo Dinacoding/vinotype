@@ -8,11 +8,21 @@ menuToogle.addEventListener('click', () => {
 
 });
 
-// Example: Displaying a search result
+const searchInput = document.querySelector('.search-bar input');
 const resultsBox = document.querySelector('.results');
-const searchResult = "Your search results here.";
+
+searchInput.addEventListener('input', function() {
+    resultsBox.style.display = 'block';
+
+    if (searchInput.value.trim() === '') {
+        resultsBox.style.display = 'none';
+    }
+
+    resultsBox.innerHTML = '<div>Result 1</div><div>Result 2</div>';
+});
 
 
+// Fetch the wines Array to the HTML
 let wines = [];
 
 
@@ -20,7 +30,9 @@ fetch('wines.json')
     .then(response => response.json())
     .then(data => {
         wines = data;
-    });
+});
+
+// Call function to the wine search
 
 function searchWines() {
     const searchIt = document.getElementById("search");
@@ -36,6 +48,7 @@ function searchWines() {
         );
     });
 
+    // if statement that creates a wine card 
     if (findWines.length > 0) {
         findWines.forEach(wine => {
             const card = document.createElement("div");

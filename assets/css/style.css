@@ -1,9 +1,9 @@
 :root {
     --deep-red: rgba(123, 30, 43,0.5);
-    --dark-black: #706868;
-    --warm-beige: #C4A484;
-    --soft-peach: #F4E3D7;
-    --pure-white: #FFFFFF;
+    --dark-black: rgb(112, 104, 104);
+    --warm-beige: rgb(196, 164, 132);
+    --soft-peach: rgb(244, 227, 215);
+    --pure-white: rgb(255, 255, 255);
 }
 
 * {
@@ -22,7 +22,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--dark-black);
+    background-color: var(--warm-beige);
     padding: 10px 20px;
     width: 100%;
 }
@@ -44,7 +44,7 @@ body{
     text-decoration: none;
     color: var(--pure-white);
 }
-
+/* Finish Navbar styling*/
 
 /*menu toogle*/
 
@@ -53,8 +53,11 @@ body{
     background: none;
     font-size: 20px;
     cursor: pointer;
-    color: var(--warm-beige);
+    color: var(--pure-white);
+    border: 0;
 }
+
+
 .search-wrapper{
     width: 100%;
     background: url('../css/images/hero-img.jpg');
@@ -77,9 +80,7 @@ body{
     align-items: center;
     width: 80%;
     margin: 10px auto;
-    border: 1px solid var(--deep-red);
     overflow: hidden;
-    border-radius: 10px;
 }
 .search-bar input{
     width: 100%;
@@ -87,17 +88,42 @@ body{
     border: none;
     outline: none;
     font-size: 16px;
+    border-radius: 10px;
+
+}
+
+.search-bar button  {
+    border: 0;
+    padding: 10px;
 }
 
 .results{
     position: absolute;
-    border: 1px solid var(--soft-peach); 
+    top: 100%;
     padding: 10px; 
     margin: 20px; 
     border-radius: 5px; 
     padding: 10px;
-    display: none; /* Initially hidden */
+    display: none; 
+}
+
+.card-box{
+    padding:20px;
     z-index: 10;
+    background-color: black;
+
+}
+.card-box:last-child {
+    border-bottom: none;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
 }
 
 
