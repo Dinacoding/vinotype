@@ -79,9 +79,8 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    width: 80%;
     margin: 10px auto;
-    overflow: hidden;
+    width: 80%;
 }
 .search-bar input{
     width: 100%;
@@ -119,7 +118,6 @@ body{
 }
 .card-wrapper{
     width: 80%;
-    margin: 10px auto;
     
 }
 
@@ -176,6 +174,12 @@ body{
 @media (max-width: 992px) {
     
     .search-bar {
-      width: 500px; 
+      width: 70%; 
+    }
+}
+
+@media (min-width: 992px) {
+    .search-bar {
+      width: 800px; 
     }
 }
