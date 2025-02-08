@@ -78,7 +78,6 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 
 - Features the logo on the left 
 - Contains the links for the wines on the right.
-- Includes a button to switch the language other than English 
 
 2. Search bar, it is on the content area in the Hero Section 
 
