@@ -100,10 +100,12 @@ body{
 
 .results{
     position: absolute;
-    top: 0;
+    top: 50%;
     border-radius: 5px; 
     padding: 10px;
     display: none; 
+    background-color: aliceblue;
+    
 }
 
 /* JavaScript code */
