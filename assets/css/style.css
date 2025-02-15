@@ -107,7 +107,9 @@ body{
     background-color: aliceblue;
     
 }
-
+.hidden{
+    display: none;
+}
 /* JavaScript code */
 .card-box{
     background-color: var(--warm-beige);
