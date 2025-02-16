@@ -1,14 +1,13 @@
 // Menu toogle and Nav-list 
-const menuToogle = document.querySelector(".menu-toggle");
+const menuToggle = document.querySelector(".menu-toggle");
 const navList = document.querySelector('.nav-list');
 
-// On click event listener Toogle menu
-menuToogle.addEventListener('click', () => {
+menuToggle.addEventListener('click', () => {
     navList.classList.toggle('appear');
-
+    console.log("Menu toggled!"); // Log when menu is toggled
 });
 
-// Search bar height changes accordingly with the content
+/* Search bar height changes accordingly with the content
 
 const searchInput = document.getElementById('search');
         const resultsBox = document.getElementById('results');
@@ -65,4 +64,4 @@ const searchInput = document.getElementById('search');
                 resultsBox.style.display = 'none';
                 searchBar.classList.remove('expanded'); // Remove expanded class
             }
-        });
+        });*/
