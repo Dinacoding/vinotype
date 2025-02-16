@@ -67,14 +67,13 @@ body{
     background-repeat: no-repeat;
     height: 80vh;
     position: relative; /* Add relative positioning to the parent */
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .search-wrapper .search-bar {
-    position: absolute;
-    transform: translateY(-50%) translateX(-50%); /* Center precisely */
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 8px;
     width: 80%; 
     transition: width 0.3s ease;
@@ -87,7 +86,8 @@ body{
     outline: none;
     font-size: 16px;
     border-radius: 10px;
-    position: relative;
+   
+
 
 }
 
