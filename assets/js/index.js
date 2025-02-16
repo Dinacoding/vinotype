@@ -21,8 +21,9 @@ fetch('wines.json')
     .then(response => response.json())
     .then(data => {
         wines = data;
+        console.log(data);
     });
-    console.log(data);
+    
 /*
         searchInput.addEventListener('input', searchWines);
 
