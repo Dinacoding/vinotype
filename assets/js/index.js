@@ -22,6 +22,9 @@ fetch('wines.json')
     .then(data => {
         wines = data;
         console.log(wines); 
+    })
+    .catch(error => {
+        console.error("Error fetching wine data:", error);
     });
     
 /*
