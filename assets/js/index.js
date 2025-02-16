@@ -15,9 +15,7 @@ const resultsBox = document.getElementById('results');
 const searchBar = document.querySelector('.search-bar');
 let wines = [];
 
-console.log(searchInput);
-console.log(results);
-console.log(searchBar);
+
 
 
 
