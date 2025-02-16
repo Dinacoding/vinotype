@@ -67,7 +67,6 @@ body{
     background-repeat: no-repeat;
 }
 .search-wrapper .search-bar{
-   height: 80vh;
    display: flex;
    align-items: center;
    justify-content: center;
