@@ -7,14 +7,21 @@ menuToggle.addEventListener('click', () => {
     console.log("Menu toggled!"); // Log when menu is toggled
 });
 
-/* Search bar height changes accordingly with the content
+//Search bar height changes accordingly with the content
 
+// Wine Search
 const searchInput = document.getElementById('search');
-        const resultsBox = document.getElementById('results');
-        const searchBar = document.querySelector('.search-bar');
-        let wines = [];
+const resultsBox = document.getElementById('results');
+const searchBar = document.querySelector('.search-bar');
+let wines = [];
 
-        fetch('wines.json')
+console.log(searchInput);
+console.log(results);
+console.log(searchBar);
+
+
+
+   /*     fetch('wines.json')
             .then(response => response.json())
             .then(data => {
                 wines = data;
