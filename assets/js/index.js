@@ -10,9 +10,11 @@ menuToogle.addEventListener('click', () => {
 
 // Search bar height changes accordingly with the content
 
-const searchInput = document.querySelector('.search-bar input');
-const searchBar = document.getElementById('search-bar');
-const resultsBox = document.querySelector('.results');
+const searchInput = document.getElementById('search');
+const resultsBox = document.getElementById('results');
+const searchBar = document.querySelector('.search-bar');
+let wines = [];
+
 
 searchInput.addEventListener('input', function() {
     searchInput.classList.add('expanded');
@@ -42,8 +44,7 @@ fetch('wines.json')
 
 
 function searchWines() {
-    const query = document.getElementById('search').value.toLowerCase();
-    const resultsBox = document.getElementById('results');
+    const query = searchInput.value.toLowerCase();
     resultsBox.innerHTML = '';
 
     if (query.trim() === '') {
