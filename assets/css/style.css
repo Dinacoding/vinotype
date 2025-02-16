@@ -81,7 +81,6 @@ body{
     left: 50%;
     display: flex;
     align-items: center;
-    margin: 10px auto;
     width: 80%;
 }
 .search-bar input{
