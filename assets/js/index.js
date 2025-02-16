@@ -20,7 +20,7 @@ let wines = [];
 fetch('wines.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        wines = data;
     })
     
 /*
