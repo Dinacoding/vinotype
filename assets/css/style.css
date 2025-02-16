@@ -71,8 +71,6 @@ body{
 
 .search-wrapper .search-bar {
     position: absolute;
-    top: 50%;
-    left: 50%; 
     transform: translateY(-50%) translateX(-50%); /* Center precisely */
     display: flex;
     align-items: center;
