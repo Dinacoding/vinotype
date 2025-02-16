@@ -98,6 +98,7 @@ body{
 }
 
 .results{
+    position: absolute;
     border-radius: 5px; 
     padding: 10px;
     display: none; 
