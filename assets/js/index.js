@@ -24,17 +24,15 @@ fetch('wines.json')
     .then(data => {
         wines = data;
         console.log(wines); 
+
+        searchInput.addEventListener('input', searchWines);
+        searchButton.addEventListener('click', searchWines);
     })
+    
     .catch(error => {
         console.error("Error fetching wine data:", error);
     });
    
-// Event listener on the INPUT field 
-searchInput.addEventListener('input', searchWines);
-
-// Event listener on the BUTTON (click) - Optional, for triggering search manually
-searchButton.addEventListener('click', searchWines);
-
 
 function searchWines() {
     const query = searchInput.value.toLowerCase(); // Get value from INPUT
