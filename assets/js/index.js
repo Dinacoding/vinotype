@@ -21,6 +21,7 @@ fetch('wines.json')
     .then(response => response.json())
     .then(data => {
         wines = data;
+        console.log(wines); 
     })
     
 /*
