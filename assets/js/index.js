@@ -3,13 +3,11 @@ const menuToogle = document.querySelector(".menu-toggle");
 const navList = document.querySelector('.nav-list');
 
 // On click event listener Toogle menu
-menuToggle.addEventListener('click', () => {
-    if (navList.classList.contains('appear')) {
-        navList.classList.remove('appear');
-    } else {
-        navList.classList.add('appear');
-    }
+menuToogle.addEventListener('click', () => {
+    navList.classList.toggle('appear');
+
 });
+
 // Search bar height changes accordingly with the content
 
 const searchInput = document.getElementById('search');
