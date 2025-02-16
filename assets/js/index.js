@@ -10,7 +10,7 @@ menuToggle.addEventListener('click', () => {
 //Search bar height changes accordingly with the content
 
 // Wine Search
-const searchInput = document.getElementById('btn');
+const searchInput = document.getElementById('search');
 const resultsBox = document.getElementById('results');
 const searchBar = document.querySelector('.search-bar');
 const searchButton = document.getElementById('btn')
