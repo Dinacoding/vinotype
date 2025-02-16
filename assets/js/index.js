@@ -26,18 +26,16 @@ fetch('wines.json')
     .catch(error => {
         console.error("Error fetching wine data:", error);
     });
-    
-/*
-        searchInput.addEventListener('input', searchWines);
-
+    // search input 
+    searchInput.addEventListener('input', searchWines);
         function searchWines() {
-            const query = searchInput.value.toLowerCase();
-            resultsBox.innerHTML = '';
+        const query = searchInput.value.toLowerCase();
+        resultsBox.innerHTML = '';
 
-            if (query.trim() === '') {
-                resultsBox.style.display = 'none';
-                searchBar.classList.remove('expanded'); // Remove expanded class
-                return;
+        if (query.trim() === '') {
+            resultsBox.style.display = 'none';
+            searchBar.classList.remove('expanded'); // Remove expanded class
+            console.log(resultsBox);
             }
 
             const filteredWines = wines.filter(wine =>
@@ -46,7 +44,7 @@ fetch('wines.json')
                 wine.country.toLowerCase().includes(query) ||
                 wine.color.toLowerCase().includes(query)
             );
-
+            // if filteredWine is bigger than 0
             if (filteredWines.length > 0) {
                 resultsBox.style.display = 'block';
                 searchBar.classList.add('expanded'); // Add expanded class
@@ -61,6 +59,7 @@ fetch('wines.json')
                     };
                     resultsBox.appendChild(li);
                 });
+                
             } else {
                 resultsBox.style.display = 'none';
                 searchBar.classList.remove('expanded'); // Remove expanded class
@@ -72,4 +71,4 @@ fetch('wines.json')
                 resultsBox.style.display = 'none';
                 searchBar.classList.remove('expanded'); // Remove expanded class
             }
-        });*/
+        });
