@@ -16,11 +16,11 @@ const searchBar = document.querySelector('.search-bar');
 let wines = [];
 
 
-
-
-
-   /*     fetch('wines.json')
-            .then(response => response.json())
+// Fetch wine data on the wines.json
+fetch('wines.json')
+    .then(response => response.json())
+    console.log("Response is positive");
+    /*
             .then(data => {
                 wines = data;
             });
