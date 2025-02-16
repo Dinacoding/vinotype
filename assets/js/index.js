@@ -19,7 +19,7 @@ let wines = [];
 // Fetch wine data on the wines.json
 fetch('wines.json')
     .then(response => response.json())
-    console.log("Response is positive");
+    console.log(data);
     /*
             .then(data => {
                 wines = data;
