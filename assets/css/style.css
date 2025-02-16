@@ -76,7 +76,9 @@ body{
 }
 
 .search-bar {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     display: flex;
     align-items: center;
     margin: 10px auto;
