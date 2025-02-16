@@ -3,81 +3,68 @@ const menuToogle = document.querySelector(".menu-toggle");
 const navList = document.querySelector('.nav-list');
 
 // On click event listener Toogle menu
-menuToogle.addEventListener('click', () => {
-    navList.classList.toggle('appear');
-
+menuToggle.addEventListener('click', () => {
+    if (navList.classList.contains('appear')) {
+        navList.classList.remove('appear');
+    } else {
+        navList.classList.add('appear');
+    }
 });
-
 // Search bar height changes accordingly with the content
 
 const searchInput = document.getElementById('search');
-const resultsBox = document.getElementById('results');
-const searchBar = document.querySelector('.search-bar');
-let wines = [];
+        const resultsBox = document.getElementById('results');
+        const searchBar = document.querySelector('.search-bar');
+        let wines = [];
 
+        fetch('wines.json')
+            .then(response => response.json())
+            .then(data => {
+                wines = data;
+            });
 
-searchInput.addEventListener('input', function() {
-    searchInput.classList.add('expanded');
-    resultsBox.style.display = 'block';
+        searchInput.addEventListener('input', searchWines);
 
-    if (searchInput.value.trim() === '') {
-        searchBar.classList.remove('expanded');
-        resultsBox.style.display = 'none';
-    }
+        function searchWines() {
+            const query = searchInput.value.toLowerCase();
+            resultsBox.innerHTML = '';
 
-    resultsBox.innerHTML = '';
-});
-
-
-// Fetch the wines Array to the HTML
-let wines = [];
-
-
-fetch('wines.json')
-    .then(response => response.json())
-    .then(data => {
-        wines = data;
-});
-
-// Call function to the wine search
-
-
-
-function searchWines() {
-    const query = searchInput.value.toLowerCase();
-    resultsBox.innerHTML = '';
-
-    if (query.trim() === '') {
-        resultsBox.style.display = 'none';
-        return;
-    }
-
-    const filteredWines = wines.filter(wine => 
-        wine.name.toLowerCase().includes(query) ||
-        wine.grape.toLowerCase().includes(query) ||
-        wine.country.toLowerCase().includes(query) ||
-        wine.color.toLowerCase().includes(query)
-    );
-
-    if (filteredWines.length > 0) {
-        resultsBox.style.display = 'block';
-        filteredWines.forEach(wine => {
-            const div = document.createElement('div');
-            div.classList.add('wine-card');
-            div.innerHTML = `<strong>${wine.name}</strong> (${wine.year}) - ${wine.color}, ${wine.country}`;
-            div.onclick = function() {
-                document.getElementById('search').value = wine.name;
+            if (query.trim() === '') {
                 resultsBox.style.display = 'none';
-            };
-            resultsBox.appendChild(div);
-        });
-    } else {
-        resultsBox.style.display = 'none';
-    }
-}
+                searchBar.classList.remove('expanded'); // Remove expanded class
+                return;
+            }
 
-document.addEventListener('click', function(event) {
-    if (!document.querySelector('.search-bar').contains(event.target)) {
-        document.getElementById('results').style.display = 'none';
-    }
-});
+            const filteredWines = wines.filter(wine =>
+                wine.name.toLowerCase().includes(query) ||
+                wine.grape.toLowerCase().includes(query) ||
+                wine.country.toLowerCase().includes(query) ||
+                wine.color.toLowerCase().includes(query)
+            );
+
+            if (filteredWines.length > 0) {
+                resultsBox.style.display = 'block';
+                searchBar.classList.add('expanded'); // Add expanded class
+                filteredWines.forEach(wine => {
+                    const li = document.createElement('li'); // Use <li> for results
+                    li.classList.add('wine-card');
+                    li.innerHTML = `<strong>${wine.name}</strong> (${wine.year}) - ${wine.color}, ${wine.country}`;
+                    li.onclick = function() {
+                        searchInput.value = wine.name;
+                        resultsBox.style.display = 'none';
+                        searchBar.classList.remove('expanded'); // Remove expanded class
+                    };
+                    resultsBox.appendChild(li);
+                });
+            } else {
+                resultsBox.style.display = 'none';
+                searchBar.classList.remove('expanded'); // Remove expanded class
+            }
+        }
+
+        document.addEventListener('click', function(event) {
+            if (!searchBar.contains(event.target)) {
+                resultsBox.style.display = 'none';
+                searchBar.classList.remove('expanded'); // Remove expanded class
+            }
+        });
