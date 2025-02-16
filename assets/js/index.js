@@ -22,7 +22,7 @@ fetch('wines.json')
     .then(data => {
         wines = data;
         console.log(wines); 
-    })
+    });
     
 /*
         searchInput.addEventListener('input', searchWines);
