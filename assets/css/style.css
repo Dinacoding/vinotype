@@ -81,6 +81,11 @@ body{
     gap: 8px;
     width: 80%; 
     transition: width 0.3s ease;
+    
+}
+.search-bar{
+    display: flex;
+    flex-direction: column;
 }
 
 .search-bar input{
