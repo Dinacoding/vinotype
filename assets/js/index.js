@@ -19,12 +19,11 @@ let wines = [];
 // Fetch wine data on the wines.json
 fetch('wines.json')
     .then(response => response.json())
+    .then(data => {
+        wines = data;
+    });
     console.log(data);
-    /*
-            .then(data => {
-                wines = data;
-            });
-
+/*
         searchInput.addEventListener('input', searchWines);
 
         function searchWines() {
