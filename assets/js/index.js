@@ -10,9 +10,11 @@ menuToggle.addEventListener('click', () => {
 //Search bar height changes accordingly with the content
 
 // Wine Search
-const searchInput = document.getElementById('search');
+const searchInput = document.getElementById('btn');
 const resultsBox = document.getElementById('results');
 const searchBar = document.querySelector('.search-bar');
+const searchButton = document.getElementById('btn')
+
 let wines = [];
 
 
@@ -26,49 +28,54 @@ fetch('wines.json')
     .catch(error => {
         console.error("Error fetching wine data:", error);
     });
-    // search input 
-    searchInput.addEventListener('input', searchWines);
-        function searchWines() {
-        const query = searchInput.value.toLowerCase();
-        resultsBox.innerHTML = '';
+   
+// Event listener on the INPUT field 
+searchInput.addEventListener('input', searchWines);
 
-        if (query.trim() === '') {
-            resultsBox.style.display = 'none';
-            searchBar.classList.remove('expanded'); // Remove expanded class
-            console.log(resultsBox);
-            }
+// Event listener on the BUTTON (click) - Optional, for triggering search manually
+searchButton.addEventListener('click', searchWines);
 
-            const filteredWines = wines.filter(wine =>
-                wine.name.toLowerCase().includes(query) ||
-                wine.grape.toLowerCase().includes(query) ||
-                wine.country.toLowerCase().includes(query) ||
-                wine.color.toLowerCase().includes(query)
-            );
-            // if filteredWine is bigger than 0
-            if (filteredWines.length > 0) {
-                resultsBox.style.display = 'block';
-                searchBar.classList.add('expanded'); // Add expanded class
-                filteredWines.forEach(wine => {
-                    const li = document.createElement('li'); // Use <li> for results
-                    li.classList.add('wine-card');
-                    li.innerHTML = `<strong>${wine.name}</strong> (${wine.year}) - ${wine.color}, ${wine.country}`;
-                    li.onclick = function() {
-                        searchInput.value = wine.name;
-                        resultsBox.style.display = 'none';
-                        searchBar.classList.remove('expanded'); // Remove expanded class
-                    };
-                    resultsBox.appendChild(li);
-                });
-                
-            } else {
+
+function searchWines() {
+    const query = searchInput.value.toLowerCase(); // Get value from INPUT
+    resultsBox.innerHTML = '';
+
+    if (query.trim() === '') {
+        resultsBox.style.display = 'none';
+        searchBar.classList.remove('expanded');
+        return;
+    }
+
+    const filteredWines = wines.filter(wine =>
+        wine.name.toLowerCase().includes(query) ||
+        wine.grape.toLowerCase().includes(query) ||
+        wine.country.toLowerCase().includes(query) ||
+        wine.color.toLowerCase().includes(query)
+    );
+
+    if (filteredWines.length > 0) {
+        resultsBox.style.display = 'block';
+        searchBar.classList.add('expanded');
+        filteredWines.forEach(wine => {
+            const li = document.createElement('li');
+            li.classList.add('wine-card');
+            li.innerHTML = `<strong>${wine.name}</strong> (${wine.year}) - ${wine.color}, ${wine.country}`;
+            li.onclick = () => {
+                searchInput.value = wine.name;
                 resultsBox.style.display = 'none';
-                searchBar.classList.remove('expanded'); // Remove expanded class
-            }
-        }
-
-        document.addEventListener('click', function(event) {
-            if (!searchBar.contains(event.target)) {
-                resultsBox.style.display = 'none';
-                searchBar.classList.remove('expanded'); // Remove expanded class
-            }
+                searchBar.classList.remove('expanded');
+            };
+            resultsBox.appendChild(li);
         });
+    } else {
+        resultsBox.style.display = 'none';
+        searchBar.classList.remove('expanded');
+    }
+}
+
+document.addEventListener('click', (event) => {
+    if (!searchBar.contains(event.target)) {
+        resultsBox.style.display = 'none';
+        searchBar.classList.remove('expanded');
+    }
+});
