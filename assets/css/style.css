@@ -58,7 +58,7 @@ body{
 }
 
 
-.search-wrapper{
+.search-wrapper {
     width: 100%;
     background: url('../css/images/hero-img.jpg');
     background-size: cover;
@@ -66,22 +66,22 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
-}
-.search-wrapper .search-bar{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 8px;
-   transition: width 0.3s ease;
+    position: relative; /* Add relative positioning to the parent */
 }
 
-.search-bar {
+.search-wrapper .search-bar {
     position: absolute;
     top: 50%;
+    left: 50%; 
+    transform: translateY(-50%) translateX(-50%); /* Center precisely */
     display: flex;
     align-items: center;
-    width: 80%;
+    justify-content: center;
+    gap: 8px;
+    width: 80%; 
+    transition: width 0.3s ease;
 }
+
 .search-bar input{
     width: 100%;
     padding: 10px;
