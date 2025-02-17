@@ -103,7 +103,7 @@ body{
     padding: 10px;
     display: none; 
     background-color: aliceblue;
-    margin-top: 270px;
+    padding: 270px;
     z-index: 2;
     width: 80%;
     font-size: 14px;
