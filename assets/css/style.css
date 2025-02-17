@@ -97,13 +97,15 @@ body{
     border: 0;
     padding: 10px;
 }
+.search-bar #results{
+    padding-top: 270px;
 
+}
 #results{
     border-radius: 5px; 
     padding: 10px;
     display: none; 
     background-color: aliceblue;
-    padding: 270px;
     z-index: 2;
     width: 80%;
     font-size: 14px;
