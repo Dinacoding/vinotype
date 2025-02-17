@@ -12,4 +12,5 @@
 | Hamburger menu is responsive and toggle has been updated with JavaScript| Yes | Tested and confirmed|
 | Data is being used on the display an array with wines| Yes| It has been tested in the console|
 | Message of error fetching the data on the fetch function| Yes| It has been tested in the console|
+| Live Link is present in the README.md | Yes                  | It is present and working|
 
