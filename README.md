@@ -66,8 +66,6 @@ recommendations.
 - If the user continuously enters invalid names, the system could suggest trying alternative keywords or give a more detailed error message.
 
 
-
-
 ## Planning 
 Vinotype is a web searcher website designed for a practical and fast online searcher. It's functionalities and features are clean and responsive and a search bar will be present and a results display section. Users will be able to select other languages than English. The website will integrate a Internal API built with few wines from different regions, and will provide rating and reviews and a description. It will be built using HTML, CSS and JavaScript. For searching the user can use the wine name, the region or use the type of wine, the results and suggestions will appear on a dropdown below the bar. 
 Vinotype ensures a smooth functionality. The website will be deployed via GitHub.
