@@ -103,8 +103,9 @@ body{
     padding: 10px;
     display: none; 
     background-color: aliceblue;
-    margin-top: 100px;
+    margin-top: 270px;
     z-index: 2;
+    width: 80%;
     
 }
 .hidden{
