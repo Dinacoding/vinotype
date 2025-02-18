@@ -103,8 +103,6 @@ body{
 }
 #results{
     border-radius: 5px; 
-    padding: 10px;
-    display: none; 
     background-color: aliceblue;
     z-index: 2;
     width: 80%;
