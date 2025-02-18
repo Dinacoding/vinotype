@@ -73,10 +73,10 @@ body{
 
 }
 
-.search-wrapper .search-bar {
-    position: absolute;
-    top: 50%;
+.search-bar {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 8px;
     width: 80%; 
     transition: width 0.3s ease;
@@ -104,13 +104,11 @@ body{
 }
 
 #results{
-    position: absolute;
     border-radius: 5px; 
     background-color: aliceblue;
     z-index: 2;
-    width: 80%;
+    width: 70%;
     font-size: 14px;
-    top: 100%;
     max-height: 200px;
     
 }
