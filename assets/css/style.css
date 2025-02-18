@@ -75,7 +75,6 @@ body{
 
 .search-wrapper .search-bar {
     position: absolute;
-    top: 50%;
     display: flex;
     gap: 8px;
     width: 80%; 
