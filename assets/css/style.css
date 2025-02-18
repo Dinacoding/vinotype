@@ -88,7 +88,7 @@ body{
     padding: 10px;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 13px;
     border-radius: 10px;
 
 }
@@ -98,7 +98,7 @@ body{
     padding: 10px;
 }
 .search-bar #results{
-    padding-top: 270px;
+    margin-top: 250px;
 
 }
 #results{
