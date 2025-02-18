@@ -102,6 +102,7 @@ body{
 
 }
 #results{
+    position: absolute;
     border-radius: 5px; 
     background-color: aliceblue;
     z-index: 2;
