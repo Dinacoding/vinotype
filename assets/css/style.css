@@ -71,6 +71,9 @@ body{
     flex-direction: column;
 
 }
+.search-wrapper{
+    
+}
 
 .search-bar {
     display: flex;
