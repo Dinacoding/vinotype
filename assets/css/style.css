@@ -110,6 +110,8 @@ body{
     z-index: 2;
     width: 80%;
     font-size: 14px;
+    top: 100%;
+    max-height: 200px;
     
 }
 
