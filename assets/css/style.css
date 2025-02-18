@@ -84,6 +84,7 @@ body{
 }
 
 .search-bar input{
+    flex-grow: 1;
     width: 100%;
     padding: 10px;
     border: none;
@@ -180,7 +181,6 @@ body{
     }
 
     #results{
-        width: 80%;
         font-size: 9px;
         
     }
