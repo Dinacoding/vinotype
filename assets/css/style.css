@@ -67,7 +67,9 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 .search-wrapper{
