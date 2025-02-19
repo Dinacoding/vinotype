@@ -188,7 +188,7 @@ body{
     }
 
     .search-bar button{
-
+        width: 20px;
     }
 
     #results{
