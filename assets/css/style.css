@@ -104,7 +104,11 @@ body{
     border: 0;
     border-radius:50%;
     height: 20px;
-    width: 20px;
+    width: 100%;
+}
+
+.search-bar i{
+    font-size: large;
 }
 .search-bar #results{
     margin-top: 250px;
