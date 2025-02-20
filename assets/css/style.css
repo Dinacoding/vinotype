@@ -255,5 +255,36 @@ body{
 }
 
 @media (min-width: 1600px) {
-    
+    .nav-list {
+        gap: 50px;
+        font-size: 20px;
+    }
+    .search-bar {
+        width: 40%; 
+        max-width: 1300px;
+    }
+
+    .search-bar input {
+        font-size: 22px;
+        padding: 18px;
+    }
+
+    .search-bar button {
+        width: 70px;
+        height: 60px;
+    }
+
+    #results {
+        width: 30%;
+        max-width: 800px;
+        font-size: 20px;
+    }
+
+    .logo img {
+        height: 140px;
+    }
+
+    .card-wrapper {
+        width: 45%;
+    }
 }
