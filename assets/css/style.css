@@ -15,7 +15,8 @@
 
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 /*Navbar styling*/
 #header{
