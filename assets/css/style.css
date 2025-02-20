@@ -216,5 +216,40 @@ body{
 }
 
 @media (min-width: 1200px) {
+    .nav-list {
+        gap: 30px;
+    }
+
+
+    .search-bar {
+        width: 70%; 
+        max-width: 1000px;
+    }
+
+    .search-bar input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .search-bar button {
+        width: 50px;
+        height: 40px;
+    }
+
+    #results {
+        width: 40%;
+        max-width: 600px;
+        font-size: 16px;
+    }
+
+    .card-wrapper {
+        width: 60%;
+        margin: auto;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+
     
 }
