@@ -74,6 +74,10 @@ body{
     
 
 }
+
+.search-section img{
+    width: 200px;
+}
 .search-wrapper{
     display:flex;
     flex-direction: column;
