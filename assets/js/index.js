@@ -14,6 +14,7 @@ const searchInput = document.getElementById('search');
 const resultsBox = document.getElementById('results');
 const searchBar = document.querySelector('.search-bar');
 const searchButton = document.getElementById('btn')
+const clearButton = document.getElementById('clear-button')
 
 let wines = [];
 
