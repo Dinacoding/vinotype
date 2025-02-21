@@ -35,6 +35,13 @@ fetch('wines.json')
     });
    
 
+clearButton.addEventListener("click", () => {
+    searchInput.value = '';
+    resultsBox.value = '';
+    resultsBox.style.display = "none";
+    searchBar.classList.remove('expanded');
+})
+
 function searchWines() {
     const query = searchInput.value.toLowerCase(); // Get value from INPUT
     resultsBox.innerHTML = '';
@@ -42,7 +49,7 @@ function searchWines() {
     if (query.trim() === '') {
         resultsBox.style.display = 'none';
         searchBar.classList.remove('expanded');
-        return;
+        return searchBar;
     }
 
     const filteredWines = wines.filter(wine =>
