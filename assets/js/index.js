@@ -40,7 +40,7 @@ clearButton.addEventListener("click", () => {
     resultsBox.value = '';
     resultsBox.style.display = "none";
     searchBar.classList.remove('expanded');
-})
+});
 
 function searchWines() {
     const query = searchInput.value.toLowerCase(); // Get value from INPUT
