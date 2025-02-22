@@ -196,7 +196,7 @@ footer {
     color: var(--deep-red);
 }
 
-.footer-nav ul {
+.footer-nav ul li{
     padding: 0;
     display: inline-flex;
     gap: 20px;
