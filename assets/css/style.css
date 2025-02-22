@@ -4,6 +4,12 @@
     --warm-beige: rgb(196, 164, 132);
     --soft-peach: rgb(244, 227, 215);
     --pure-white: rgb(255, 255, 255);
+    --warm-beige-opacity: rgba(196, 164, 132,.7);
+    --soft-peach-opacity: rgb(244, 227, 215,.6);
+    --dark-black-opacity: rgba(112, 104, 104,.4);
+
+
+
 }
 
 * {
