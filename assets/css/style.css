@@ -168,6 +168,69 @@ body{
     font-size: 12px;
 }
 
+
+footer {
+    background-color: var(--soft-peach);
+    width: 100%;
+    height: fit-content;
+}
+
+.footer-container {
+    height: fit-content;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+
+}
+
+.footer-nav div p {
+    order: 3;
+    color: var(--deep-red);
+}
+
+.footer-nav ul {
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+    color: var(--pure-white);
+
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: var(--dark-black);
+}
+
+.fa-facebook-f,
+.fa-google,
+.fa-instagram {
+    transition: color 0.2s;
+}
+
+.fa-facebook-f:hover {
+    color: #3b5998;
+}
+
+.fa-google:hover {
+    color: #dd4b39;
+}
+
+.fa-instagram:hover {
+    color: pink;
+}
+
+footer p {
+    text-align: center;
+}
+
 /* end of JavaScript code*/
 
 /* Media Query for Mobile Screens */
