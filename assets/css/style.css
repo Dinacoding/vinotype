@@ -190,18 +190,9 @@ footer {
     width: 100%;
 
 }
-
-.footer-nav div p {
-    order: 3;
-    color: var(--deep-red);
-}
-
-.footer-nav ul li{
-    padding: 0;
-    display: inline-flex;
-    gap: 20px;
-    color: var(--pure-white);
-
+.social-link{
+    display: flex;
+    gap: 10px;
 }
 
 .footer-nav ul li a {
