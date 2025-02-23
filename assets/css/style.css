@@ -230,7 +230,7 @@ footer {
 /* end of JavaScript code*/
 
 /* Media Query for Mobile Screens */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .logo img {
         height: 70px; 
     }
@@ -272,6 +272,8 @@ footer {
 
     #results{
         font-size: 9px;
+        margin-left: 38px;
+        width:591px;
         
     }
 }
