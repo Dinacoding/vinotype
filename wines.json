@@ -1,4 +1,5 @@
-[{
+[
+  {
     "name": "Vega Sicilia Único",
     "grape": "Tempranillo",
     "year": 2015,
@@ -6,7 +7,6 @@
     "country": "Spain",
     "description": "A legendary Spanish red wine with deep complexity and elegant aging potential."
   },
-  
   {
     "name": "La Rioja Alta Gran Reserva 904",
     "grape": "Tempranillo, Graciano",
@@ -14,6 +14,14 @@
     "color": "Red",
     "country": "Spain",
     "description": "Aged Rioja with velvety tannins and hints of tobacco and dark berries."
+  },
+  {
+    "name": "Cava Codorníu Clasico",
+    "grape": "Macabeo",
+    "year": 2019,
+    "color": "Sparkling",
+    "country": "Spain",
+    "description": "A lively Spanish Cava with fine bubbles and citrusy freshness."
   },
   {
     "name": "Quinta do Crasto Reserva",
@@ -24,12 +32,20 @@
     "description": "A bold and structured Portuguese red with rich black fruit and spice notes."
   },
   {
-    "name": "Barca Velha",
-    "grape": "Touriga Franca, Tinta Roriz",
-    "year": 2011,
-    "color": "Red",
+    "name": "Vinho Verde Soalheiro",
+    "grape": "Alvarinho",
+    "year": 2022,
+    "color": "White",
     "country": "Portugal",
-    "description": "One of Portugal’s most iconic wines, with deep intensity and aging power."
+    "description": "A zesty and mineral-driven white wine with fresh citrus flavors."
+  },
+  {
+    "name": "Porto Ramos Pinto 10 Year Old",
+    "grape": "Touriga Franca",
+    "year": 2012,
+    "color": "Sweet",
+    "country": "Portugal",
+    "description": "A rich and smooth Portuguese port wine with nutty and caramel flavors."
   },
   {
     "name": "Château Margaux",
@@ -40,12 +56,20 @@
     "description": "One of Bordeaux’s finest, known for its elegance, silky tannins, and aging potential."
   },
   {
-    "name": "Château Pétrus",
-    "grape": "Merlot",
-    "year": 2018,
-    "color": "Red",
+    "name": "Chablis Premier Cru",
+    "grape": "Chardonnay",
+    "year": 2020,
+    "color": "White",
     "country": "France",
-    "description": "A rare and luxurious Bordeaux with unmatched depth and complexity."
+    "description": "A crisp and mineral-driven Chardonnay from the Burgundy region."
+  },
+  {
+    "name": "Moët & Chandon Brut Impérial",
+    "grape": "Chardonnay",
+    "year": 2018,
+    "color": "Sparkling",
+    "country": "France",
+    "description": "A famous French Champagne with fine bubbles and creamy elegance."
   },
   {
     "name": "Barolo Marchesi di Barolo",
@@ -64,131 +88,11 @@
     "description": "A structured and long-lived Tuscan red with deep cherry and spice flavors."
   },
   {
-    "name": "Albariño Pazo de Señorans",
-    "grape": "Albariño",
-    "year": 2021,
-    "color": "White",
-    "country": "Spain",
-    "description": "A fresh and aromatic white wine with citrus and floral notes."
-  },
-  {
-    "name": "Txakoli Ameztoi",
-    "grape": "Hondarrabi Zuri",
-    "year": 2022,
-    "color": "White",
-    "country": "Spain",
-    "description": "A slightly effervescent Basque wine with crisp acidity and green apple notes."
-  },
-  {
-    "name": "Esporão Reserva Branco",
-    "grape": "Antão Vaz",
-    "year": 2019,
-    "color": "White",
-    "country": "Portugal",
-    "description": "A creamy and complex white wine with tropical fruit and oak influences."
-  },
-  {
-    "name": "Vinho Verde Soalheiro",
-    "grape": "Alvarinho",
-    "year": 2022,
-    "color": "White",
-    "country": "Portugal",
-    "description": "A zesty and mineral-driven white wine with fresh citrus flavors."
-  },
-  {
-    "name": "Chablis Premier Cru",
-    "grape": "Chardonnay",
-    "year": 2020,
-    "color": "White",
-    "country": "France",
-    "description": "A crisp and mineral-driven Chardonnay from the Burgundy region."
-  },
-  {
-    "name": "Meursault Domaine des Comtes Lafon",
-    "grape": "Chardonnay",
-    "year": 2019,
-    "color": "White",
-    "country": "France",
-    "description": "A luxurious white Burgundy with buttery richness and vibrant acidity."
-  },
-  {
-    "name": "Ramón Bilbao Rosado",
-    "grape": "Garnacha",
-    "year": 2022,
-    "color": "Rosé",
-    "country": "Spain",
-    "description": "A refreshing Spanish rosé with red berry flavors and crisp acidity."
-  },
-  {
-    "name": "Ameztoi Rubentis Rosé",
-    "grape": "Hondarrabi Beltza",
-    "year": 2022,
-    "color": "Rosé",
-    "country": "Spain",
-    "description": "A light and fizzy Basque rosé with tart raspberry and citrus notes."
-  },
-  {
-    "name": "Mateus Rosé",
-    "grape": "Baga",
-    "year": 2021,
-    "color": "Rosé",
-    "country": "Portugal",
-    "description": "A famous Portuguese rosé with a light, slightly fizzy character."
-  },
-  {
-    "name": "Cava Codorníu Clasico",
-    "grape": "Macabeo",
-    "year": 2019,
-    "color": "Sparkling",
-    "country": "Spain",
-    "description": "A lively Spanish Cava with fine bubbles and citrusy freshness."
-  },
-  {
-    "name": "Moët & Chandon Brut Impérial",
-    "grape": "Chardonnay",
-    "year": 2018,
-    "color": "Sparkling",
-    "country": "France",
-    "description": "A famous French Champagne with fine bubbles and creamy elegance."
-  },
-  {
     "name": "Franciacorta Bellavista",
     "grape": "Pinot Nero",
     "year": 2017,
     "color": "Sparkling",
     "country": "Italy",
     "description": "An Italian sparkling wine with rich complexity and vibrant acidity."
-  },
-  {
-    "name": "Málaga Virgen Dulce",
-    "grape": "Pedro Ximénez",
-    "year": 2018,
-    "color": "Sweet",
-    "country": "Spain",
-    "description": "A luscious Spanish dessert wine with notes of dried fruits and caramel."
-  },
-  {
-    "name": "Porto Ramos Pinto 10 Year Old",
-    "grape": "Touriga Franca",
-    "year": 2012,
-    "color": "Sweet",
-    "country": "Portugal",
-    "description": "A rich and smooth Portuguese port wine with nutty and caramel flavors."
-  },
-  {
-    "name": "Château d'Yquem",
-    "grape": "Sémillon",
-    "year": 2017,
-    "color": "Sweet",
-    "country": "France",
-    "description": "The world’s most famous sweet wine with honeyed apricot and citrus flavors."
-  },
-  {
-    "name": "Vin Santo del Chianti",
-    "grape": "Trebbiano",
-    "year": 2015,
-    "color": "Sweet",
-    "country": "Italy",
-    "description": "A traditional Italian dessert wine with dried fruit and almond notes."
   }
 ]
