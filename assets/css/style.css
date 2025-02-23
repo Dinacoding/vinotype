@@ -284,10 +284,12 @@ footer {
         gap: 30px;
     }
 
-
+    .search-section{
+        height: 70vh;
+    }
+    
     .search-bar {
         width: 70%; 
-        max-width: 1000px;
     }
 
     .search-bar input {
