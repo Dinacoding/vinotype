@@ -72,7 +72,7 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -249,7 +249,10 @@ footer {
     .menu-toggle{
         display: block;
     }
-    
+    .search-bar{
+        width: 90%;
+    }
+
     .search-bar input{
         font-size: 9px;
         padding: 8px;
