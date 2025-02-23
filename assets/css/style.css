@@ -332,6 +332,7 @@ footer {
     .search-bar input {
         font-size: 22px;
         padding: 18px;
+        width:894px;
     }
 
     .search-bar button {
@@ -341,7 +342,7 @@ footer {
 
     #results {
         width: 30%;
-        max-width: 800px;
+        width: 895px;
         font-size: 20px;
     }
 
