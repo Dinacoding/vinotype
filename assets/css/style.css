@@ -80,10 +80,13 @@ body{
     
 
 }
+.image-container{
+    align-self: center;
+
+}
 
 .image-container img{
     width: 100px;
-    align-self: center;
 }
 .search-wrapper{
     display:flex;
