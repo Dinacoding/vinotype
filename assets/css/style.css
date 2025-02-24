@@ -271,8 +271,16 @@ footer {
     #results{
         font-size: 9px;
         margin-left: 38px;
-        width:591px;
+        width:591px;  
         
+    }
+    .card-title {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .card-text {
+        font-size: 10px;
     }
 }
 
