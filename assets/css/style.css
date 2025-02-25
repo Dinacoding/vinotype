@@ -92,30 +92,26 @@ body{
     width: 100px;
 }
 .search-wrapper{
-    display:flex;
+
+    width: 80%; 
+   
+
+}.search-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 80%; 
+    width: 100%; 
     max-width: 900px;
-    min-width: 300px;
     margin: auto;
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 90%; 
-    transition: width 0.3s ease;
-    position: relative;
+    width: 100%; 
+    
     
 }
 
 .search-bar input{
-    flex-grow: 1;
     width: 100%;
     padding: 10px;
     border: none;
@@ -136,17 +132,16 @@ body{
     font-size: large;
 }
 
+.search-bar, #results {
+    width: 100%;
+}
+
 
 #results{
-    position: absolute;
-    top: 100%;
-    left: 0%;
     background-color: aliceblue;
     z-index: 2;
     width: 100%;
-    font-size: 14px;
-    padding-left: 8px;
-    padding-bottom: 8px;
+    padding:8px;
     padding-right: 8px;
     border-radius: 0 0 10px 10px;
     
