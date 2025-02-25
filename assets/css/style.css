@@ -97,6 +97,10 @@ body{
     align-items: center;
     justify-content: space-between;
     position: relative;
+    width: 80%; 
+    max-width: 900px;
+    min-width: 300px;
+    margin: auto;
 }
 
 .search-bar {
