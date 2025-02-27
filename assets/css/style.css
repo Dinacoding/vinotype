@@ -73,7 +73,7 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 70vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -95,7 +95,7 @@ body{
 .search-wrapper{
     width: 80%; 
     position: absolute;
-    left: 10%;
+    left: 15%;
 }
 .search-bar {
     display:flex;
@@ -137,6 +137,7 @@ body{
     padding: 10px; 
     z-index: 5;
     right: 12%;
+    transform: translateY(-50%);
     
 }
 .search-container button   {
@@ -257,7 +258,7 @@ footer {
         display: block;
     }
     .search-bar{
-        width: 90%;
+        width: 100%;
     }
 
     .search-bar input{
@@ -270,8 +271,12 @@ footer {
         
     }
 
-    .search-container button{
-        width: 38px;
+    .search-container{
+        right: 5%;
+    }
+
+    .search-container button, .search-container i{
+        font-size: 10px;
         height: 30px;
     }
 

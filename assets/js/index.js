@@ -74,8 +74,18 @@ function searchWines() {
             resultsBox.appendChild(li);
         });
     } else {
-        resultsBox.style.display = 'none';
+        resultsBox.style.display = 'block';
         searchBar.classList.remove('expanded');
+        resultsBox.innerHTML = '';
+
+        const li = document.createElement('li');
+        li.classList.add('wine-card', 'not-found');
+        li.innerHTML = `<strong>Wine not found!</strong> Try another search.`
+        li.style.color = "red";
+
+
+        resultsBox.appendChild(li);
+
     }
 }
 
