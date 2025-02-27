@@ -37,7 +37,7 @@ fetch('wines.json')
 
 clearButton.addEventListener("click", () => {
     searchInput.value = '';
-    resultsBox.value = '';
+    resultsBox.innerHTML = '';
     resultsBox.style.display = "none";
     searchBar.classList.remove('expanded');
 });
@@ -90,9 +90,5 @@ function searchWines() {
     }
 }
 
-document.addEventListener('click', (event) => {
-    if (!searchBar.contains(event.target)) {
-        resultsBox.style.display = 'none';
-        searchBar.classList.remove('expanded');
-    }
-});
+searchButton.addEventListener("click", searchWines);
+

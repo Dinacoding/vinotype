@@ -134,10 +134,10 @@ body{
 .search-container {
     display: flex;
     position: absolute;
-    padding: 10px; 
+    padding: 7px; 
     z-index: 5;
-    right: 12%;
-    transform: translateY(-50%);
+    right: 2%;
+    gap: 2px;
     
 }
 .search-container button   {
@@ -271,13 +271,10 @@ footer {
         
     }
 
-    .search-container{
-        right: 5%;
-    }
+  
 
     .search-container button, .search-container i{
         font-size: 10px;
-        height: 30px;
     }
 
    
