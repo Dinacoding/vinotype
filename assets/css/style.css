@@ -134,7 +134,7 @@ body{
 .search-container {
     display: flex;
     position: absolute;
-    padding: 7px; 
+    padding-top: 7px; 
     z-index: 5;
     right: 2%;
     gap: 2px;
