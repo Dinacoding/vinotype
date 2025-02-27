@@ -43,6 +43,7 @@ clearButton.addEventListener("click", () => {
 });
 
 function searchWines() {
+    console.log("Search button clicked!")
     const query = searchInput.value.toLowerCase(); // Get value from INPUT
     resultsBox.innerHTML = '';
 
