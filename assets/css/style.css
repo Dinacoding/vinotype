@@ -95,7 +95,7 @@ body{
 .search-wrapper{
     width: 80%; 
     position: absolute;
-    left: 15%;
+    left: 10%;
 }
 .search-bar {
     display:flex;
