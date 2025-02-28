@@ -117,14 +117,28 @@ function displayWineCard(wine) {
         wineContainer.appendChild(wineCard);
 
     console.log(wineCard);
-    searchInput.addEventListener('click', () => {
-        if (searchInput.value.trim() !== ''){
-            const searchTerm = searchInput.value.toLowerCase();
-            const wineFind = wines.find(w => w.name.toLowerCase() === searchTerm);
-            console.log(searchTerm);
-            console.log(wineFind);
-        }
-    });
 }
+searchInput.addEventListener('click', () => {
+    if (searchInput.value.trim() !== '') {
+        const searchTerm = searchInput.value.toLowerCase();
+        const foundWine = wines.find(w => w.name.toLowerCase() === searchTerm);
+
+        console.log(searchTerm);
+        console.log(foundWine);
+
+        if (foundWine) {
+            console.log("Wine found:", foundWine);
+            console.log("Wine Name:", foundWine.name);
+            console.log("Wine Grape:", foundWine.grape);
+            displayWineCard(foundWine);
+        } else {
+            console.log("Wine not found for search term:", searchTerm);
+        }
+    } else {
+        console.log("Search input is empty.");
+    }
+});
+
+
 searchButton.addEventListener("click", searchWines);
 
