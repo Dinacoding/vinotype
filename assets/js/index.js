@@ -28,7 +28,7 @@ fetch('wines.json')
         console.log(wines); 
 
         searchInput.addEventListener('input', searchWines);
-        searchButton.addEventListener('click', searchWines);
+        searchButton.addEventListener('click', displayWineCard);
     })
     
     .catch(error => {
@@ -99,13 +99,8 @@ function displayWineCard(wine) {
     searchBar.classList.remove('expanded');
     wineContainer.innerHTML = ''; 
 
-    console.log(wineContainer);
-
     const wineCard = document.createElement('div');
     wineCard.classList.add('wine-card');
-
-
-
     wineCard.innerHTML = `
      <h2>${wine.name}</h2>
         <p><strong>Year:</strong> ${wine.year} - <strong>Color:</strong> ${wine.color}, <strong>Country:</strong> ${wine.country}</p>
