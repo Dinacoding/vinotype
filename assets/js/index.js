@@ -15,6 +15,7 @@ const resultsBox = document.getElementById('results');
 const searchBar = document.querySelector('.search-bar');
 const searchButton = document.getElementById('btn')
 const clearButton = document.getElementById('clear-button')
+const wineContainer = document.getElementById('wine-container')
 
 let wines = [];
 
@@ -91,7 +92,15 @@ function searchWines() {
 }
 //Display Wine Card function
 function displayWineCard(wine) {
-    
+    console.log(wine);
+    searchInput.value = wine.name;
+    resultsBox.style.display = 'none';
+    searchBar.classList.remove('expanded');
+    wineContainer.innerHTML = ''; 
+
+    const wineCard = document.createElement('div');
+    wineCard.classList.add('wine-card')
+
 }
 searchButton.addEventListener("click", searchWines);
 
