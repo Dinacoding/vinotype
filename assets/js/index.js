@@ -98,8 +98,12 @@ function displayWineCard(wine) {
     searchBar.classList.remove('expanded');
     wineContainer.innerHTML = ''; 
 
+    console.log(wineContainer);
+
     const wineCard = document.createElement('div');
     wineCard.classList.add('wine-card');
+
+
 
     wineCard.innerHTML = `
      <h2>${wine.name}</h2>
@@ -109,6 +113,9 @@ function displayWineCard(wine) {
         <h3>Sommelier Pairing Suggestions</h3>
         <p>${wine.pairingSuggestions}</p>`
 
+        wineContainer.appendChild(wineCard);
+
+    console.log(wineCard);
 }
 searchButton.addEventListener("click", searchWines);
 
