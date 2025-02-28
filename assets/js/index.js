@@ -117,6 +117,14 @@ function displayWineCard(wine) {
         wineContainer.appendChild(wineCard);
 
     console.log(wineCard);
+    searchInput.addEventListener('click', () => {
+        if (searchInput.value.trim() !== ''){
+            const searchTerm = searchInput.value.toLowerCase();
+            const wineFind = wines.find(w => w.name.toLowerCase() === searchTerm);
+            console.log(searchTerm);
+            console.log(wineFind);
+        }
+    });
 }
 searchButton.addEventListener("click", searchWines);
 
