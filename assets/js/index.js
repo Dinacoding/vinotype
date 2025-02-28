@@ -89,6 +89,9 @@ function searchWines() {
 
     }
 }
-
+//Display Wine Card function
+function displayWineCard(wine) {
+    
+}
 searchButton.addEventListener("click", searchWines);
 
