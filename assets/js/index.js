@@ -72,6 +72,7 @@ function searchWines() {
                 searchInput.value = wine.name;
                 resultsBox.style.display = 'none';
                 searchBar.classList.remove('expanded');
+                displayWineCard(wine);
             };
             resultsBox.appendChild(li);
         });
