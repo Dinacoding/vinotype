@@ -28,7 +28,7 @@ fetch('wines.json')
         console.log(wines); 
 
         searchInput.addEventListener('input', searchWines);
-        searchButton.addEventListener('click', displayWineCard);
+        searchButton.addEventListener('click', searchWines);
     })
     
     .catch(error => {
