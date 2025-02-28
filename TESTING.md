@@ -16,4 +16,5 @@
 | The button clear, removes all the results| Yes | It works and removes the results|
 | Footer contains the social links and they redirect to the correct webpages| Yes| Accessibility and they redirect|
 | Message of Wine not found appears if the wine is not present on the list | Yes | It appears on red below the search-bar|
+| Wine.json has been updated to include pairing suggestions and tasting notes| Yes | It was updated and it is included in the index.js file|
 
