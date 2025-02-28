@@ -139,6 +139,10 @@ searchInput.addEventListener('click', () => {
     }
 });
 
-
-searchButton.addEventListener("click", searchWines);
+document.addEventListener('click', (e) => {
+    if (!searchBar.contains(e.target)) {
+        resultsBox.style.display = 'none';
+        searchBar.classList.remove('expanded');
+    }
+});
 
