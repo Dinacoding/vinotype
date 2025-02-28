@@ -1,11 +1,13 @@
 [
   {
-    "name": "Vega Sicilia Único",
+   "name": "Vega Sicilia Único",
     "grape": "Tempranillo",
     "year": 2015,
     "color": "Red",
     "country": "Spain",
-    "description": "A legendary Spanish red wine with deep complexity and elegant aging potential."
+    "description": "A legendary Spanish red wine with deep complexity and elegant aging potential.",
+    "tastingNotes": "Dark berries, tobacco, leather, and earthy tones.",
+    "pairingSuggestions": "Pairs well with grilled lamb and aged cheeses."
   },
   {
     "name": "La Rioja Alta Gran Reserva 904",
@@ -13,7 +15,9 @@
     "year": 2015,
     "color": "Red",
     "country": "Spain",
-    "description": "Aged Rioja with velvety tannins and hints of tobacco and dark berries."
+    "description": "Aged Rioja with velvety tannins and hints of tobacco and dark berries.",
+    "tastingNotes": "Vanilla, dried fruit, and hints of spice.",
+    "pairingSuggestions": "Pairs well with roasted meats and manchego cheese."
   },
   {
     "name": "Cava Codorníu Clasico",
@@ -21,7 +25,9 @@
     "year": 2019,
     "color": "Sparkling",
     "country": "Spain",
-    "description": "A lively Spanish Cava with fine bubbles and citrusy freshness."
+    "description": "A lively Spanish Cava with fine bubbles and citrusy freshness.",
+    "tastingNotes": "Crisp citrus, green apple, and toasted almond.",
+    "pairingSuggestions": "Perfect with seafood, tapas, and light salads."
   },
   {
     "name": "Quinta do Crasto Reserva",
@@ -29,7 +35,9 @@
     "year": 2020,
     "color": "Red",
     "country": "Portugal",
-    "description": "A bold and structured Portuguese red with rich black fruit and spice notes."
+    "description": "A bold and structured Portuguese red with rich black fruit and spice notes.",
+    "tastingNotes": "Blackberry, plum, spice, and subtle oak.",
+    "pairingSuggestions": "Pairs well with grilled meats, game, and rich pasta dishes."
   },
   {
     "name": "Vinho Verde Soalheiro",
@@ -37,7 +45,9 @@
     "year": 2022,
     "color": "White",
     "country": "Portugal",
-    "description": "A zesty and mineral-driven white wine with fresh citrus flavors."
+    "description": "A zesty and mineral-driven white wine with fresh citrus flavors.",
+    "tastingNotes": "Lemon zest, green apple, and a touch of minerality.",
+    "pairingSuggestions": "Best with shellfish, sushi, and fresh salads."
   },
   {
     "name": "Porto Ramos Pinto 10 Year Old",
@@ -45,7 +55,9 @@
     "year": 2012,
     "color": "Sweet",
     "country": "Portugal",
-    "description": "A rich and smooth Portuguese port wine with nutty and caramel flavors."
+    "description": "A rich and smooth Portuguese port wine with nutty and caramel flavors.",
+    "tastingNotes": "Dried fruits, caramel, and toasted nuts.",
+    "pairingSuggestions": "Ideal with dark chocolate, blue cheese, and nuts."
   },
   {
     "name": "Château Margaux",
@@ -53,7 +65,9 @@
     "year": 2016,
     "color": "Red",
     "country": "France",
-    "description": "One of Bordeaux’s finest, known for its elegance, silky tannins, and aging potential."
+    "description": "One of Bordeaux’s finest, known for its elegance, silky tannins, and aging potential.",
+    "tastingNotes": "Blackcurrant, violet, cedar, and fine tannins.",
+    "pairingSuggestions": "Pairs beautifully with filet mignon and roasted lamb."
   },
   {
     "name": "Chablis Premier Cru",
@@ -61,7 +75,9 @@
     "year": 2020,
     "color": "White",
     "country": "France",
-    "description": "A crisp and mineral-driven Chardonnay from the Burgundy region."
+    "description": "A crisp and mineral-driven Chardonnay from the Burgundy region.",
+    "tastingNotes": "Citrus, white peach, and flinty minerality.",
+    "pairingSuggestions": "Excellent with oysters, grilled fish, and goat cheese."
   },
   {
     "name": "Moët & Chandon Brut Impérial",
@@ -69,7 +85,9 @@
     "year": 2018,
     "color": "Sparkling",
     "country": "France",
-    "description": "A famous French Champagne with fine bubbles and creamy elegance."
+    "description": "A famous French Champagne with fine bubbles and creamy elegance.",
+    "tastingNotes": "Green apple, brioche, and floral hints.",
+    "pairingSuggestions": "Perfect with caviar, soft cheeses, and strawberries."
   },
   {
     "name": "Barolo Marchesi di Barolo",
@@ -77,7 +95,9 @@
     "year": 2018,
     "color": "Red",
     "country": "Italy",
-    "description": "A rich and intense Italian red with floral aromas and a long-lasting finish."
+    "description": "A rich and intense Italian red with floral aromas and a long-lasting finish.",
+    "tastingNotes": "Rose, cherry, tar, and earthy undertones.",
+    "pairingSuggestions": "Pairs well with truffle pasta, braised meats, and aged cheeses."
   },
   {
     "name": "Brunello di Montalcino Biondi Santi",
@@ -85,7 +105,9 @@
     "year": 2017,
     "color": "Red",
     "country": "Italy",
-    "description": "A structured and long-lived Tuscan red with deep cherry and spice flavors."
+    "description": "A structured and long-lived Tuscan red with deep cherry and spice flavors.",
+    "tastingNotes": "Dark cherry, leather, tobacco, and spice.",
+    "pairingSuggestions": "Great with roasted lamb, wild boar, and hard cheeses."
   },
   {
     "name": "Franciacorta Bellavista",
@@ -93,6 +115,8 @@
     "year": 2017,
     "color": "Sparkling",
     "country": "Italy",
-    "description": "An Italian sparkling wine with rich complexity and vibrant acidity."
+    "description": "An Italian sparkling wine with rich complexity and vibrant acidity.",
+    "tastingNotes": "Ripe pear, almond, and fresh citrus.",
+    "pairingSuggestions": "Enjoy with seafood risotto, antipasti, and soft cheeses."
   }
 ]
