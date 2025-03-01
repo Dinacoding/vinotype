@@ -133,6 +133,12 @@ function displayWineCard(wine) {
         <h3>Sommelier Pairing Suggestions</h3>
         <p>${wine.pairingSuggestions}</p>`;
 
+    wineContainer.hidden = true;
+
+    wineContainer.addEventListener('click', function() {
+        wineContainer.hidden = !wineContainer.hidden; 
+    });
+
     wineContainer.appendChild(wineCard);
     console.log("Wine card appears:", wineCard); 
 }
