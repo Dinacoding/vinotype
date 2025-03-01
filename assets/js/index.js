@@ -169,7 +169,7 @@ resultsBox.addEventListener("click", (event) => {
         if (foundWine) displayWineCard(foundWine);
     }
 });
-
+//
 document.addEventListener('click', (e) => {
     if (!searchBar.contains(e.target)) {
         resultsBox.style.display = 'none';
