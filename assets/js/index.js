@@ -27,9 +27,7 @@ fetch('wines.json')
         wines = data;
         console.log(wines); 
 
-        searchInput.addEventListener('input', searchWines); // Trigger search on input
-        searchButton.addEventListener('click', searchWines); // Trigger search when search button is clicked
-    })
+ searchButton.addEventListener('click', displayWineOnButtonClick);    })
     .catch(error => {
         console.error("Error fetching wine data:", error);
     });
@@ -86,18 +84,27 @@ function searchWines() {
 
         resultsBox.appendChild(li);
     }
-    if (filteredWines.length > 0) {
-        const wine = filteredWines[0]; 
-        displayWineCard(wine); 
-    } else {
-        console.log('No wines found');
-        resultsBox.innerHTML = '';
-        resultsBox.style.display = 'none';
-        searchBar.classList.remove('expanded');
+
+
+    function displayWineOnButtonClick() {
+        console.log("Search button clicked!");
+    
+        const query = searchInput.value.toLowerCase();
+        if (query.trim() === '') {
+            console.log("No search input provided.");
+            return;
+        }
+    
+        const foundWine = wines.find(w => w.name.toLowerCase() === query);
+    
+        if (foundWine) {
+            displayWineCard(foundWine);
+        } else {
+            console.log("No wine found with that name.");
+            wineContainer.innerHTML = `<p style="color: red;"><strong>Wine not found.</strong> Try another search.</p>`;
+        }
     }
 }
-
-
 // Function to display the wine card
 function displayWineCard(wine) {
     console.log(wine); // Check if wine is correctly passed
