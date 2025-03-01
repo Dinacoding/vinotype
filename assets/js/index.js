@@ -9,32 +9,30 @@ menuToggle.addEventListener('click', () => {
 
 //Search bar height changes accordingly with the content
 
-// Wine Search
+/// Wine Search
 const searchInput = document.getElementById('search');
 const resultsBox = document.getElementById('results');
 const searchBar = document.querySelector('.search-bar');
-const searchButton = document.getElementById('btn')
-const clearButton = document.getElementById('clear-button')
-const wineContainer = document.getElementById('wine-container')
+const searchButton = document.getElementById('btn');
+const clearButton = document.getElementById('clear-button');
+const wineContainer = document.getElementById('wine-container');
 
 let wines = [];
 
 
-// Fetch wine data on the wines.json
+// Fetch wine data from the wines.json
 fetch('wines.json')
     .then(response => response.json())
     .then(data => {
         wines = data;
         console.log(wines); 
 
-        searchInput.addEventListener('input', searchWines);
-        searchButton.addEventListener('click', searchWines);
+        searchInput.addEventListener('input', searchWines); // Trigger search on input
+        searchButton.addEventListener('click', searchWines); // Trigger search when search button is clicked
     })
-    
     .catch(error => {
         console.error("Error fetching wine data:", error);
     });
-   
 
 clearButton.addEventListener("click", () => {
     searchInput.value = '';
@@ -43,15 +41,16 @@ clearButton.addEventListener("click", () => {
     searchBar.classList.remove('expanded');
 });
 
+// Function to perform the wine search
 function searchWines() {
-    console.log("Search button clicked!")
+    console.log("Search button clicked!");
     const query = searchInput.value.toLowerCase(); // Get value from INPUT
     resultsBox.innerHTML = '';
 
     if (query.trim() === '') {
         resultsBox.style.display = 'none';
         searchBar.classList.remove('expanded');
-        return searchBar;
+        return;
     }
 
     const filteredWines = wines.filter(wine =>
@@ -63,7 +62,7 @@ function searchWines() {
 
     if (filteredWines.length > 0) {
         resultsBox.style.display = 'block';
-        searchBar.classList.add('expanded');
+        searchBar.classList.add('expanded'); // Expand search bar when results are found
         filteredWines.forEach(wine => {
             const li = document.createElement('li');
             li.classList.add('wine-list');
@@ -72,7 +71,6 @@ function searchWines() {
                 searchInput.value = wine.name;
                 resultsBox.style.display = 'none';
                 searchBar.classList.remove('expanded');
-                displayWineCard(wine);
             };
             resultsBox.appendChild(li);
         });
@@ -83,21 +81,26 @@ function searchWines() {
 
         const li = document.createElement('li');
         li.classList.add('wine-card', 'not-found');
-        li.innerHTML = `<strong>Wine not found!</strong> Try another search.`
+        li.innerHTML = `<strong>Wine not found!</strong> Try another search.`;
         li.style.color = "red";
 
-
         resultsBox.appendChild(li);
-
     }
+    
 }
-//Display Wine Card function
+
+// Function to display the wine card
 function displayWineCard(wine) {
-    console.log(wine);
+    console.log(wine); // Check if wine is correctly passed
+    if (!wine) {
+        console.error('No wine data provided');
+        return; // If no wine data, don't proceed
+    }
+
     searchInput.value = wine.name;
     resultsBox.style.display = 'none';
     searchBar.classList.remove('expanded');
-    wineContainer.innerHTML = ''; 
+    wineContainer.innerHTML = ''; // Clear the container before appending the new card
 
     const wineCard = document.createElement('div');
     wineCard.classList.add('wine-card');
@@ -108,37 +111,30 @@ function displayWineCard(wine) {
         <p>${wine.description}</p>
         <p>${wine.tastingNotes}</p>
         <h3>Sommelier Pairing Suggestions</h3>
-        <p>${wine.pairingSuggestions}</p>`
+        <p>${wine.pairingSuggestions}</p>`;
 
-        wineContainer.appendChild(wineCard);
-
-    console.log(wineCard);
+    wineContainer.appendChild(wineCard);
+    console.log(wineCard); // Check if the wine card is correctly created
 }
+
+// Handle clicks inside the search input to directly display a wine card
 searchInput.addEventListener('click', () => {
     if (searchInput.value.trim() !== '') {
         const searchTerm = searchInput.value.toLowerCase();
         const foundWine = wines.find(w => w.name.toLowerCase() === searchTerm);
 
-        console.log(searchTerm);
-        console.log(foundWine);
-
         if (foundWine) {
-            console.log("Wine found:", foundWine);
-            console.log("Wine Name:", foundWine.name);
-            console.log("Wine Grape:", foundWine.grape);
             displayWineCard(foundWine);
         } else {
             console.log("Wine not found for search term:", searchTerm);
         }
-    } else {
-        console.log("Search input is empty.");
     }
 });
 
+// Close results box when clicking outside of the search bar
 document.addEventListener('click', (e) => {
     if (!searchBar.contains(e.target)) {
         resultsBox.style.display = 'none';
         searchBar.classList.remove('expanded');
     }
 });
-
