@@ -68,7 +68,6 @@ function searchWines() {
         filteredWines.forEach(wine => {
             const li = document.createElement('li');
             li.classList.add('wine-list');
-            li.setAttribute("data-name", wine.name);
             li.innerHTML = `<strong>${wine.name}</strong> (${wine.year}) - ${wine.color}, ${wine.country}`;
             li.onclick = () => {
                 searchInput.value = wine.name;
@@ -142,6 +141,10 @@ function showNotFoundMessage() {
 }
 
 // Handle clicks inside the search input to directly display a wine card
+searchInput.addEventListener("input", () => {
+    console.log("Typing detected:", searchInput.value);
+    searchWines();
+});
 
 searchInput.addEventListener('click', () => {
     if (searchInput.value.trim() !== '') {
