@@ -25,14 +25,16 @@ fetch('wines.json')
     .then(data => {
         wines = data;
         console.log("Wines loads", wines)
-        searchButton.addEventListener("click", displayWineOnButtonClick); 
-        console.log("✅ Search button event listener added!")
-
+        
     })
     
     .catch(error => {
         console.error("Error fetching wine data:", error);
     });
+
+searchButton.addEventListener("click", displayWineOnButtonClick);
+console.log("✅ Search button event listener added!");
+
 
 clearButton.addEventListener("click", () => {
     searchInput.value = '';
@@ -100,10 +102,17 @@ function displayWineOnButtonClick() {
         return;
     }
 
+    if (!wines || wines.length === 0) {
+        console.error("Wine data is not loaded yet!");
+        return;
+    }
+
     const foundWine = wines.find(w => w.name.toLowerCase().includes(query)); //  Find the correct wine because it's searching includes matching logic
     console.log("Found wine:", foundWine);
+
     if (foundWine) {
         displayWineCard(foundWine);
+
     } else {
         console.log("No wine found with that name.");
         wineContainer.innerHTML = `<p style="color: red;"><strong>Wine not found.</strong> Try another search.</p>`;
@@ -125,7 +134,7 @@ function displayWineCard(wine) {
     const wineCard = document.createElement('div');
     wineCard.classList.add('wine-card');
     wineCard.innerHTML = `
-     <h2>${wine.name}</h2>
+        <h2>${wine.name}</h2>
         <p><strong>Year:</strong> ${wine.year} - <strong>Color:</strong> ${wine.color}, <strong>Country:</strong> ${wine.country}</p>
         <h3>Tasting Notes</h3>
         <p>${wine.description}</p>
@@ -133,15 +142,12 @@ function displayWineCard(wine) {
         <h3>Sommelier Pairing Suggestions</h3>
         <p>${wine.pairingSuggestions}</p>`;
 
-    wineContainer.hidden = true;
-
-    wineContainer.addEventListener('click', function() {
-        wineContainer.hidden = !wineContainer.hidden; 
-    });
-
+    wineContainer.hidden = false;
     wineContainer.appendChild(wineCard);
     console.log("Wine card appears:", wineCard); 
 }
+
+
 function showNotFoundMessage() {
     wineContainer.innerHTML = `<p style="color: red;"><strong>Wine not found.</strong> Try another search.</p>`;
 }
