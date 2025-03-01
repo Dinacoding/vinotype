@@ -101,7 +101,7 @@ function displayWineOnButtonClick() {
         return;
     }
 
-    const foundWine = wines.find(w => w.name.toLowerCase() === query);
+    const foundWine = wines.find(w => w.name.toLowerCase().includes(query)); //  Find the correct wine because it's searching includes matching logic
     console.log("Found wine:", foundWine);
     if (foundWine) {
         displayWineCard(foundWine);
