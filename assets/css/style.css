@@ -155,11 +155,15 @@ body{
 
 }
 
+#wine-container{
+    width:100%;
+    height: 50vh;
+    z-index: 9;
+}
 /* JavaScript code */
 .wine-card{
     background-color: var(--warm-beige);
-    width:100%;
-    height: 30vh;
+    
 
 
 }

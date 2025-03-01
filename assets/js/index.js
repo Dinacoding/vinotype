@@ -148,8 +148,8 @@ searchInput.addEventListener('click', () => {
     }
 });
 
-searchInput.addEventListener("input", searchWines);
-searchButton.addEventListener("click", displayWineOnButtonClick);
+searchInput.addEventListener("input", searchWines); 
+searchButton.addEventListener("click", displayWineOnButtonClick); 
 
 // Close results box when clicking outside of the search bar
 
@@ -158,18 +158,6 @@ resultsBox.addEventListener("click", (event) => {
         const wineName = event.target.dataset.name;
         const foundWine = wines.find((w) => w.name === wineName);
         if (foundWine) displayWineCard(foundWine);
-    }
-});
-
-searchInput.addEventListener("click", () => {
-    if (searchInput.value.trim() !== "") {
-        const searchTerm = searchInput.value.toLowerCase();
-        const foundWine = wines.find((w) => w.lowerName === searchTerm);
-        if (foundWine) {
-            displayWineCard(foundWine);
-        } else {
-            console.log("Wine not found for search term:", searchTerm);
-        }
     }
 });
 
