@@ -26,6 +26,7 @@ fetch('wines.json')
         wines = data;
         console.log("Wines loads", wines)
         searchButton.addEventListener("click", displayWineOnButtonClick); 
+        console.log("✅ Search button event listener added!")
 
     })
     
@@ -67,6 +68,7 @@ function searchWines() {
         filteredWines.forEach(wine => {
             const li = document.createElement('li');
             li.classList.add('wine-list');
+            li.setAttribute("data-name", wine.name);
             li.innerHTML = `<strong>${wine.name}</strong> (${wine.year}) - ${wine.color}, ${wine.country}`;
             li.onclick = () => {
                 searchInput.value = wine.name;
