@@ -86,8 +86,17 @@ function searchWines() {
 
         resultsBox.appendChild(li);
     }
-    
+    if (filteredWines.length > 0) {
+        const wine = filteredWines[0]; 
+        displayWineCard(wine); 
+    } else {
+        console.log('No wines found');
+        resultsBox.innerHTML = '';
+        resultsBox.style.display = 'none';
+        searchBar.classList.remove('expanded');
+    }
 }
+
 
 // Function to display the wine card
 function displayWineCard(wine) {
@@ -114,7 +123,7 @@ function displayWineCard(wine) {
         <p>${wine.pairingSuggestions}</p>`;
 
     wineContainer.appendChild(wineCard);
-    console.log(wineCard); // Check if the wine card is correctly created
+    console.log(wineCard); 
 }
 
 // Handle clicks inside the search input to directly display a wine card
