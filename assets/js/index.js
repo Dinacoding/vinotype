@@ -24,6 +24,9 @@ fetch('wines.json')
     .then(response => response.json())
     .then(data => {
         wines = data;
+        console.log("Wines loads", wines)
+        searchButton.addEventListener("click", displayWineOnButtonClick); 
+
     })
     
     .catch(error => {
@@ -89,13 +92,15 @@ function displayWineOnButtonClick() {
     console.log("Search button clicked!");
 
     const query = searchInput.value.toLowerCase();
+    console.log("User search", query);
+
     if (query.trim() === '') {
         console.log("No search input provided.");
         return;
     }
 
     const foundWine = wines.find(w => w.name.toLowerCase() === query);
-
+    console.log("Found wine:", foundWine);
     if (foundWine) {
         displayWineCard(foundWine);
     } else {
@@ -105,7 +110,7 @@ function displayWineOnButtonClick() {
 }
 // Function to display the wine card
 function displayWineCard(wine) {
-    console.log(wine); // Check if wine is correctly passed
+    console.log("Display Wine Card", wine); // Check if wine is correctly passed
     if (!wine) {
         console.error('No wine data provided');
         return; // If no wine data, don't proceed
@@ -128,13 +133,14 @@ function displayWineCard(wine) {
         <p>${wine.pairingSuggestions}</p>`;
 
     wineContainer.appendChild(wineCard);
-    console.log(wineCard); 
+    console.log("Wine card appears:", wineCard); 
 }
 function showNotFoundMessage() {
     wineContainer.innerHTML = `<p style="color: red;"><strong>Wine not found.</strong> Try another search.</p>`;
 }
 
 // Handle clicks inside the search input to directly display a wine card
+
 searchInput.addEventListener('click', () => {
     if (searchInput.value.trim() !== '') {
         const searchTerm = searchInput.value.toLowerCase();
@@ -148,8 +154,6 @@ searchInput.addEventListener('click', () => {
     }
 });
 
-searchInput.addEventListener("input", searchWines); 
-searchButton.addEventListener("click", displayWineOnButtonClick); 
 
 // Close results box when clicking outside of the search bar
 
