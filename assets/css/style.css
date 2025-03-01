@@ -162,8 +162,11 @@ body{
 }
 /* JavaScript code */
 .wine-card{
-    background-color: var(--warm-beige);
-    
+    display: block !important;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
 
 
 }
