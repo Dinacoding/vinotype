@@ -26,8 +26,8 @@ fetch('wines.json')
     .then(data => {
         wines = data;
         console.log(wines); 
-
- searchButton.addEventListener('click', displayWineOnButtonClick);    })
+        searchInput.addEventListener('click', searchWines)
+        searchButton.addEventListener('click', displayWineOnButtonClick);    })
     .catch(error => {
         console.error("Error fetching wine data:", error);
     });
