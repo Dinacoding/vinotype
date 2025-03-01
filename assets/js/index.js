@@ -19,15 +19,13 @@ const wineContainer = document.getElementById('wine-container');
 
 let wines = [];
 
-
 // Fetch wine data from the wines.json
 fetch('wines.json')
     .then(response => response.json())
     .then(data => {
         wines = data;
-        console.log(wines); 
-        searchInput.addEventListener('click', searchWines)
-        searchButton.addEventListener('click', displayWineOnButtonClick);    })
+    })
+    
     .catch(error => {
         console.error("Error fetching wine data:", error);
     });
@@ -51,16 +49,18 @@ function searchWines() {
         return;
     }
 
-    const filteredWines = wines.filter(wine =>
+    const filteredWines = wines.filter(
+        (wine) =>
         wine.name.toLowerCase().includes(query) ||
         wine.grape.toLowerCase().includes(query) ||
         wine.country.toLowerCase().includes(query) ||
         wine.color.toLowerCase().includes(query)
     );
 
+    resultsBox.style.display = "block";          // Expand search bar when results are found
+    searchBar.classList.add("expanded");
+
     if (filteredWines.length > 0) {
-        resultsBox.style.display = 'block';
-        searchBar.classList.add('expanded'); // Expand search bar when results are found
         filteredWines.forEach(wine => {
             const li = document.createElement('li');
             li.classList.add('wine-list');
@@ -84,25 +84,23 @@ function searchWines() {
 
         resultsBox.appendChild(li);
     }
+}
+function displayWineOnButtonClick() {
+    console.log("Search button clicked!");
 
+    const query = searchInput.value.toLowerCase();
+    if (query.trim() === '') {
+        console.log("No search input provided.");
+        return;
+    }
 
-    function displayWineOnButtonClick() {
-        console.log("Search button clicked!");
-    
-        const query = searchInput.value.toLowerCase();
-        if (query.trim() === '') {
-            console.log("No search input provided.");
-            return;
-        }
-    
-        const foundWine = wines.find(w => w.name.toLowerCase() === query);
-    
-        if (foundWine) {
-            displayWineCard(foundWine);
-        } else {
-            console.log("No wine found with that name.");
-            wineContainer.innerHTML = `<p style="color: red;"><strong>Wine not found.</strong> Try another search.</p>`;
-        }
+    const foundWine = wines.find(w => w.name.toLowerCase() === query);
+
+    if (foundWine) {
+        displayWineCard(foundWine);
+    } else {
+        console.log("No wine found with that name.");
+        wineContainer.innerHTML = `<p style="color: red;"><strong>Wine not found.</strong> Try another search.</p>`;
     }
 }
 // Function to display the wine card
@@ -132,6 +130,9 @@ function displayWineCard(wine) {
     wineContainer.appendChild(wineCard);
     console.log(wineCard); 
 }
+function showNotFoundMessage() {
+    wineContainer.innerHTML = `<p style="color: red;"><strong>Wine not found.</strong> Try another search.</p>`;
+}
 
 // Handle clicks inside the search input to directly display a wine card
 searchInput.addEventListener('click', () => {
@@ -147,10 +148,35 @@ searchInput.addEventListener('click', () => {
     }
 });
 
+searchInput.addEventListener("input", searchWines);
+searchButton.addEventListener("click", displayWineOnButtonClick);
+
 // Close results box when clicking outside of the search bar
+
+resultsBox.addEventListener("click", (event) => {
+    if (event.target.classList.contains("wine-list")) {
+        const wineName = event.target.dataset.name;
+        const foundWine = wines.find((w) => w.name === wineName);
+        if (foundWine) displayWineCard(foundWine);
+    }
+});
+
+searchInput.addEventListener("click", () => {
+    if (searchInput.value.trim() !== "") {
+        const searchTerm = searchInput.value.toLowerCase();
+        const foundWine = wines.find((w) => w.lowerName === searchTerm);
+        if (foundWine) {
+            displayWineCard(foundWine);
+        } else {
+            console.log("Wine not found for search term:", searchTerm);
+        }
+    }
+});
+
 document.addEventListener('click', (e) => {
     if (!searchBar.contains(e.target)) {
         resultsBox.style.display = 'none';
         searchBar.classList.remove('expanded');
     }
 });
+
