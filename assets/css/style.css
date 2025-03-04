@@ -171,6 +171,7 @@ body{
     z-index: 999; /* Ensure it's not hidden behind other elements */
     position: relative;
     width: 90%;
+    gap: 20px;
 }
 
 .wine-card h2{
@@ -183,6 +184,7 @@ body{
 
 .wine-card p{
     font-size:8px;
+    margin-bottom: .4rem;
 }
 
 .card-image img{
