@@ -177,6 +177,10 @@ body{
     font-size: 10px;
 }
 
+.wine-card p{
+    font-size:8px;
+}
+
 footer {
     background-color: var(--soft-peach);
     width: 100%;
