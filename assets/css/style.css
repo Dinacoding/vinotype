@@ -174,11 +174,19 @@ body{
 }
 
 .wine-card h2{
+    font-size: 14px;
+}
+
+.wine-card h3{
     font-size: 10px;
 }
 
 .wine-card p{
     font-size:8px;
+}
+
+.card-image img{
+    width: 40px;
 }
 
 footer {
