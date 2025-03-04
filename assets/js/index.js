@@ -134,6 +134,7 @@ function displayWineCard(wine) {
     const wineCard = document.createElement('div');
     wineCard.classList.add('wine-card');
     wineCard.innerHTML = `
+        <button class="close-button">&times;</button> <!-- ✅ Close Button -->
         <div class="card-image">
         <img src="${wine.image}" alt="${wine.alt}">
         </div>
@@ -151,8 +152,15 @@ function displayWineCard(wine) {
     wineContainer.hidden = false;
     wineContainer.appendChild(wineCard);
     console.log("Wine card appears:", wineCard); 
-}
 
+    const closeButton = wineCard.querySelector('.close-button');
+    closeButton.addEventListener('click', closeWineCard)
+}
+function closeWineCard() {
+    console.log("Closing wine card...");
+    wineContainer.hidden = true;
+    wineContainer.innerHTML = ''; 
+}
 
 function showNotFoundMessage() {
     wineContainer.innerHTML = `<p style="color: red;"><strong>Wine not found.</strong> Try another search.</p>`;
