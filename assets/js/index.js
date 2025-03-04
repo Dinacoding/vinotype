@@ -134,13 +134,19 @@ function displayWineCard(wine) {
     const wineCard = document.createElement('div');
     wineCard.classList.add('wine-card');
     wineCard.innerHTML = `
+        <div class="card-image">
+        <img src="${wine.image}" alt="${wine.alt}">
+        </div>
+        <aside>
         <h2>${wine.name}</h2>
         <p><strong>Year:</strong> ${wine.year} - <strong>Color:</strong> ${wine.color}, <strong>Country:</strong> ${wine.country}</p>
         <h3>Tasting Notes</h3>
         <p>${wine.description}</p>
         <p>${wine.tastingNotes}</p>
         <h3>Sommelier Pairing Suggestions</h3>
-        <p>${wine.pairingSuggestions}</p>`;
+        <p>${wine.pairingSuggestions}</p>
+        </aside>`
+        ;
 
     wineContainer.hidden = false;
     wineContainer.appendChild(wineCard);
