@@ -68,11 +68,7 @@ body{
 
 .search-section {
     width: 100%;
-    background: url('../css/images/hero-img.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('../css/images/hero-img.jpg') center/cover fixed;
     height: 80vh;
     position: relative;
     display: flex;
