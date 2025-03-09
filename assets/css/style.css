@@ -349,11 +349,6 @@ footer {
         font-size: 18px;
     }
 
-    .search-bar {
-        width: 50%;
-        max-width: 1200px;
-    }
-
     .search-bar input {
         font-size: 20px;
         padding: 14px;
