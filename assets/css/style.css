@@ -381,31 +381,30 @@ footer {
     }
 
 }
-/*
-@media (min-width: 1600px) {
+@media (min-width: 1920px) {
     .nav-list {
-        gap: 50px;
+        gap: 60px;
         font-size: 20px;
     }
+
     .search-bar {
-        width: 40%; 
-        max-width: 1300px;
+        width: 40%;
+        max-width: 1400px;
     }
 
     .search-bar input {
         font-size: 22px;
         padding: 18px;
-        width:894px;
+        width: 1000px;
     }
 
-    .search-bar button {
+    .search-container button {
         width: 70px;
         height: 60px;
     }
 
     #results {
-        margin-left: 220px;
-        width: 895px;
+        width: 1000px;
         font-size: 20px;
     }
 
@@ -414,6 +413,6 @@ footer {
     }
 
     .card-wrapper {
-        width: 45%;
+        width: 40%;
     }
 }
