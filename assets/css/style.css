@@ -292,9 +292,6 @@ footer {
         font-size: 9px;
         
     }
-
-  
-
     .search-container button, .search-container i{
         font-size: 10px;
     }
@@ -309,8 +306,41 @@ footer {
         font-size: 10px;
     }
 }
-@media (max-width:1023px){
+@media (min-width:1023px){
+    .nav-list {
+        gap: 30px;
+    }
 
+    .image-container img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .search-section {
+        height: 70vh;
+    }
+
+    .search-bar {
+        width: 60%;
+    }
+
+    .search-bar input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .search-container button {
+        width: 50px;
+        height: 40px;
+    }
+
+    #results {
+        font-size: 16px;
+    }
+
+    .logo img {
+        height: 100px;
+    }
 }
 /*
 @media (min-width: 1200px) {
