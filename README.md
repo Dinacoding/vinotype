@@ -130,3 +130,42 @@ This color scheme summons the world of wine and  creates a sophisticated user ex
 - [Balsamiq](https://balsamiq.com/), used it to wireframe the webpages;
 - [ChatGPT](https://chatgpt.com/), to use it to create content for the website and get me a color palette 
 - [W3school] (https://www.w3schools.com/) to review some concepts about code;
+
+
+### How to run this project locally 
+
+1. Download the Git installer:
+
+Windows:
+
+Go to the official Git website: https://git-scm.com/
+Click on the "Download for Windows" button.
+Run the downloaded installer.
+Follow the on-screen instructions. It's generally recommended to use the default options during installation.
+macOS:
+
+The easiest way is to use Homebrew:
+Open Terminal.
+Type brew install git and press Enter.
+If you don't have Homebrew, install it first using the instructions on their website: https://brew.sh/
+Linux:
+
+Git is usually available through your distribution's package manager.
+For Ubuntu/Debian, use sudo apt update and then sudo apt install git.
+For Fedora/CentOS, use sudo dnf install git.
+For Arch Linux, use pacman -S git.
+2. Verify installation:
+
+Open your terminal or command prompt.
+Type git --version and press Enter.
+If Git is installed correctly, you'll see the installed Git version displayed.
+
+
+### To clone this project from GitHub:
+
+1. Follow this link to the Project GitHub repository.
+2. Under the repository name, click "Clone or download."
+3. In the "Clone with HTTPS" section, copy the clone URL for the repository.
+4. In your local IDE, open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type git clone, and then paste the URL you copied in Step 3.
