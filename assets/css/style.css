@@ -296,7 +296,6 @@ footer {
         font-size: 10px;
     }
 
-   
     .card-title {
         font-size: 12px;
         font-weight: bold;
@@ -306,6 +305,7 @@ footer {
         font-size: 10px;
     }
 }
+
 @media (min-width:1023px){
     .nav-list {
         gap: 30px;
