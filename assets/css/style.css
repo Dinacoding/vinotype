@@ -279,13 +279,12 @@ footer {
     .menu-toggle{
         display: block;
     }
-    .search-bar{
-        width: 100%;
-    }
+   
 
     .search-bar input{
         font-size: 9px;
         padding: 8px;
+        width: 100%;
     }
 
     #results{
