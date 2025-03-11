@@ -33,20 +33,9 @@ fetch("wines.json")
 searchInput.addEventListener("input", searchWines);
 
 searchButton.addEventListener("click", () => {
-    wineContainer.innerHTML = "";
-    if (filteredWines.length > 0) {
-        // Display all filtered wine cards
-        filteredWines.forEach(wine => {
-            displayWineCard(wine);
-        });
-        resultsBox.style.display = "none";
-        searchBar.classList.remove("expanded");
-    } else {
-        resultsBox.innerHTML = "<li class='wine-card not-found' style='color:red;'><strong>No wine to display.</strong> Search for a wine first.</li>";
-        resultsBox.style.display = "block";
-        searchBar.classList.add("expanded");
-    }
+    displayWineCards();
 });
+
 
 // Ensure the event listener is attached correctly
 clearButton.addEventListener("click", () => {
