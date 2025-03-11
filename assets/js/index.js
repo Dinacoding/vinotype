@@ -32,7 +32,7 @@ fetch("wines.json")
         console.error("Error fetching wine data:", error);
     });
 
-searchButton.addEventListener("click", displayWineOnButtonClick);
+searchButton.addEventListener("click", displayWines);
 
 
 clearButton.addEventListener("click", () => {
@@ -67,15 +67,15 @@ function searchWines() {
     searchBar.classList.add("expanded");
 
     if (filteredWines.length > 0) {
-        displayWineCard(filteredWines[0]);
         
         } else if (filteredWines.length > 1) {
         filteredWines.forEach(wine => {
             const li = document.createElement("li");
             li.classList.add("wine-list");
+            li.setAttribute("data-name", wine.name);
             li.innerHTML = `<strong>${wine.name}</strong> (${wine.year}) - ${wine.color}, ${wine.country}`;
             li.onclick = () => {
-                searchInput.value = wine.name;
+                displayWineCard(wine);
                 resultsBox.style.display = "none";
                 searchBar.classList.remove("expanded");
             };
@@ -94,7 +94,7 @@ function searchWines() {
         resultsBox.appendChild(li);
     }
 }
-function displayWineOnButtonClick() {
+function displayWines() {
     console.log("Search button clicked!");
 
     const query = searchInput.value.toLowerCase();
@@ -109,18 +109,23 @@ function displayWineOnButtonClick() {
         console.error("Wine data is not loaded yet!");
         return;
     }
+    
+    const filteredWines = wines.filter(wine => 
+        wine.name.toLowerCase().includes(query) || 
+        wine.grape.toLowerCase().includes(query) || 
+        wine.country.toLowerCase().includes(query) || 
+        wine.color.toLowerCase().includes(query)
+    );
 
-    const foundWine = wines.find(w => w.name.toLowerCase().includes(query)); //  Find the correct wine because it's searching includes matching logic
-    console.log("Found wine:", foundWine);
-
-    if (foundWine) {
-        displayWineCard(foundWine);
-
+    if (filteredWines.length > 0) {
+        wineContainer.innerHTML = ""; // Clear previous results
+        filteredWines.forEach(displayWineCard);
     } else {
-        console.log("No wine found with that name.");
-        wineContainer.innerHTML = `<p style="color: red;"><strong>Wine not found.</strong> Try another search.</p>`;
+        console.log("No wine found.");
+        showNotFoundMessage();
     }
 }
+
 // Function to display the wine card
 function displayWineCard(wine) {
     console.log("Display Wine Card", wine); // Check if wine is correctly passed
@@ -132,8 +137,7 @@ function displayWineCard(wine) {
     searchInput.value = wine.name;
     resultsBox.style.display = "none";
     searchBar.classList.remove("expanded");
-    // Clear the container before appending the new card
-    wineContainer.innerHTML = ""; 
+   
 
     const wineCard = document.createElement("div");
     wineCard.classList.add("wine-card");
@@ -160,8 +164,11 @@ function displayWineCard(wine) {
     wineContainer.appendChild(wineCard);
 
     const closeButton = wineCard.querySelector(".close-button");
-    closeButton.addEventListener("click", closeWineCard)
+    closeButton.addEventListener("click", () => {
+        wineCard.remove();
+    });
 }
+
 function closeWineCard() {
     console.log("Closing wine card...");
     wineContainer.hidden = true;
