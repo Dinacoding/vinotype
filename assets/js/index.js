@@ -33,7 +33,7 @@ fetch("wines.json")
 searchInput.addEventListener("input", searchWines);
 
 searchButton.addEventListener("click", () => {
-    displayWineCards();
+    displayWineCard();
 });
 
 
