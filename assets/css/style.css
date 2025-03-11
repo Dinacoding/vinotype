@@ -21,8 +21,7 @@
 
 }
 body{
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
 }
 /*Navbar styling*/
 #header{
@@ -76,6 +75,7 @@ body{
     justify-content: center;
 
 }
+
 h1{
     position: absolute;
     font-size: 40px;
@@ -83,6 +83,7 @@ h1{
     top: 35%;
     color: white;
 }
+
 .image-container{
     position: absolute;
     top:20%;
@@ -154,6 +155,10 @@ h1{
     font-size: medium;
     background:transparent;
 
+}
+.search-container i:hover , .search-container button:hover{
+    color: aqua;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #wine-container{
@@ -317,7 +322,7 @@ footer {
         top:10%;
     }
     h1{
-        font-size: 5rem;
+        font-size: 6rem;
     }
     .image-container img {
         width: 250px;
@@ -396,28 +401,25 @@ footer {
         gap: 60px;
         font-size: 20px;
     }
-    h1{
+
+    h1 {
         font-size: 9rem;
     }
+
     .search-bar {
         width: 100%;
     }
 
     .search-bar input {
-        font-size: 2rem;
-        padding: 18px;
+        font-size: 2rem; /* Increased font size for larger screens */
+        padding: 28px;  /* Increased padding for better accessibility */
     }
 
     .search-container button {
-        width: 70px;
-        height: 60px;
-    }
-
-    .search-container button {
-        width: 80px;
+        width: 80px;   /* Adjusted to a larger button size */
         height: 80px;
         font-size: 35px;
-        margin-top: 20px;
+        margin-top: 15px; /* Space between search button and input */
     }
 
     .search-container i {
@@ -426,11 +428,11 @@ footer {
 
     #results {
         font-size: 2.5rem;
-        padding: 20px;
+        padding: 20px; /* Extra padding for larger screens */
     }
 
     .logo img {
-        height: 200px;
+        height: 200px; /* Larger logo for larger screens */
     }
 
     .card-wrapper {
