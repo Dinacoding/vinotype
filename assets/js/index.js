@@ -33,9 +33,14 @@ fetch("wines.json")
 searchInput.addEventListener("input", searchWines);
 
 searchButton.addEventListener("click", () => {
-    displayWineCard();
+    if (filteredWines.length > 0) {
+        // Display the first wine or loop through all filtered wines
+        wineContainer.innerHTML = "";
+        filteredWines.forEach(wine => displayWineCard(wine)); // Pass each filtered wine to the function
+    } else {
+        console.log("No wines to display!");
+    }
 });
-
 
 // Ensure the event listener is attached correctly
 clearButton.addEventListener("click", () => {
