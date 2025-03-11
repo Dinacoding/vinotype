@@ -74,15 +74,19 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 
+}
+h1{
+    position: absolute;
+    font-size: 40px;
+    align-self: center;
+    top: 30%;
+    color: var(--pure-white);
 }
 .image-container{
     position: absolute;
     top:20%;
     align-self: center;
-
-
 }
 
 .image-container img{
