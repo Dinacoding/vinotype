@@ -316,6 +316,9 @@ footer {
     .image-container{
         top:10%;
     }
+    h1{
+        font-size: 5rem;
+    }
     .image-container img {
         width: 250px;
         height: 150px;
@@ -360,7 +363,9 @@ footer {
         gap: 50px;
         font-size: 18px;
     }
-
+    h1{
+        font-size: 6rem;
+    }
     .search-bar input {
         font-size: 20px;
         padding: 14px;
@@ -391,16 +396,17 @@ footer {
         gap: 60px;
         font-size: 20px;
     }
-
+    h1{
+        font-size: 9rem;
+    }
     .search-bar {
         width: 100%;
         max-width: 1400px;
     }
 
     .search-bar input {
-        font-size: 22px;
+        font-size: 2rem;
         padding: 18px;
-        width: 1000px;
     }
 
     .search-container button {
@@ -412,6 +418,7 @@ footer {
         width: 80px;
         height: 80px;
         font-size: 35px;
+        margin-top: 20px;
     }
 
     .search-container i {
@@ -419,12 +426,12 @@ footer {
     }
 
     #results {
-        width: 1000px;
-        font-size: 20px;
+        font-size: 2.5rem;
+        padding: 20px;
     }
 
     .logo img {
-        height: 100px;
+        height: 200px;
     }
 
     .card-wrapper {
