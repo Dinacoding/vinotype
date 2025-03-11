@@ -46,23 +46,25 @@ clearButton.addEventListener("click", () => {
 function searchWines() {
     console.log("Search button clicked!");
     const query = searchInput.value.toLowerCase(); 
-    resultsBox.innerHTML = "";
-
+    resultsBox.innerHTML = ""; 
+    
+    // If query is empty, hide the results and remove "expanded" class
     if (query.trim() === "") {
         resultsBox.style.display = "none";
         searchBar.classList.remove("expanded");
         return;
     }
 
+    // Filter wines based on query
     const filteredWines = wines.filter(
         (wine) =>
-        wine.name.toLowerCase().includes(query) ||
-        wine.grape.toLowerCase().includes(query) ||
-        wine.country.toLowerCase().includes(query) ||
-        wine.color.toLowerCase().includes(query)
+            wine.name.toLowerCase().includes(query) ||
+            wine.grape.toLowerCase().includes(query) ||
+            wine.country.toLowerCase().includes(query) ||
+            wine.color.toLowerCase().includes(query)
     );
 
-    // Expand search bar when results are found
+    // Expand search bar and show results if filtered wines exist
     resultsBox.style.display = "block";
     searchBar.classList.add("expanded");
 
@@ -78,7 +80,13 @@ function searchWines() {
             };
             resultsBox.appendChild(li);
         });
-    } else { resultsBox.innerHTML = `<li class="wine-card not-found" style="color:red;"><strong>Wine not found!</strong> Try another search.</li>`;
+    } else {
+        // If no wines match the query, show a "Wine not found" message
+        const notFoundMessage = document.createElement("li");
+        notFoundMessage.classList.add("wine-card", "not-found");
+        notFoundMessage.style.color = "red";
+        notFoundMessage.innerHTML = `<strong>Wine not found!</strong> Try another search.`;
+        resultsBox.appendChild(notFoundMessage);
     }
 }
 
