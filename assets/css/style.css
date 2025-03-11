@@ -254,43 +254,43 @@ footer {
 /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
     .logo img {
-        height: 70px; 
+        height: 70px;
     }
+
     .nav-list {
         display: none;
         flex-direction: column;
         align-items: center;
         position: absolute;
         top: 100%;
-        right:0;
+        right: 0;
         transition: transform 0.3s ease-in-out;
-
     }
-    .nav-list.appear{
+
+    .nav-list.appear {
         display: flex;
         transform: translateX(0);
         width: 200px;
-        background-color:var(--deep-red);
-        gap:10px;
-        
+        background-color: var(--deep-red);
+        gap: 10px;
     }
 
-    .menu-toggle{
+    .menu-toggle {
         display: block;
     }
-   
 
-    .search-bar input{
+    .search-bar input {
         font-size: 9px;
         padding: 8px;
         width: 100%;
     }
 
-    #results{
+    #results {
         font-size: 9px;
-        
     }
-    .search-container button, .search-container i{
+
+    .search-container button,
+    .search-container i {
         font-size: 10px;
     }
 
@@ -304,7 +304,8 @@ footer {
     }
 }
 
-@media (min-width:1023px){
+/* Medium screens (1024px and above) */
+@media (min-width: 1023px) {
     .nav-list {
         gap: 30px;
     }
@@ -340,13 +341,14 @@ footer {
         height: 100px;
     }
 
-    .wine-container{
+    .wine-container {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 }
 
+/* Large screens (1200px and above) */
 @media (min-width: 1200px) {
     .nav-list {
         gap: 50px;
@@ -375,8 +377,9 @@ footer {
         width: 50%;
         margin: auto;
     }
-
 }
+
+/* Very large screens (1920px and above) */
 @media (min-width: 1920px) {
     .nav-list {
         gap: 60px;
@@ -397,6 +400,16 @@ footer {
     .search-container button {
         width: 70px;
         height: 60px;
+    }
+
+    .search-container button {
+        width: 80px;
+        height: 80px;
+        font-size: 35px;
+    }
+
+    .search-container i {
+        font-size: 40px;
     }
 
     #results {
