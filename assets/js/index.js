@@ -16,6 +16,7 @@ const clearButton = document.getElementById("clear-button");
 const wineContainer = document.getElementById("wine-container");
 
 let wines = [];
+let filteredWines = [];
 
 // Fetch wine data from the wines.json
 fetch("wines.json")
@@ -29,9 +30,22 @@ fetch("wines.json")
     });
 
 // Ensure the event listener is attached correctly
-searchInput.addEventListener("click", () => {
-    console.log("Search button clicked!");
-    searchWines();
+searchInput.addEventListener("input", searchWines);
+
+searchButton.addEventListener("click", () => {
+    wineContainer.innerHTML = "";
+    if (filteredWines.length > 0) {
+        // Display all filtered wine cards
+        filteredWines.forEach(wine => {
+            displayWineCard(wine);
+        });
+        resultsBox.style.display = "none";
+        searchBar.classList.remove("expanded");
+    } else {
+        resultsBox.innerHTML = "<li class='wine-card not-found' style='color:red;'><strong>No wine to display.</strong> Search for a wine first.</li>";
+        resultsBox.style.display = "block";
+        searchBar.classList.add("expanded");
+    }
 });
 
 // Ensure the event listener is attached correctly
@@ -40,6 +54,7 @@ clearButton.addEventListener("click", () => {
     resultsBox.innerHTML = "";
     resultsBox.style.display = "none";
     searchBar.classList.remove("expanded");
+    wineContainer.innerHTML = "";
     console.log("Clear button clicked!");
 });
 
@@ -54,8 +69,7 @@ function searchWines() {
         searchBar.classList.remove("expanded");
         return;
     }
-
-    const filteredWines = wines.filter(
+    filteredWines = wines.filter(
         (wine) =>
             wine.name.toLowerCase().includes(query) ||
             wine.grape.toLowerCase().includes(query) ||
@@ -72,6 +86,7 @@ function searchWines() {
             li.classList.add("wine-list");
             li.innerHTML = `<strong>${wine.name}</strong> (${wine.year}) - ${wine.color}, ${wine.country}`;
             li.onclick = () => {
+                wineContainer.innerHTML = "";
                 displayWineCard(wine);
                 resultsBox.style.display = "none";
                 searchBar.classList.remove("expanded");
@@ -100,7 +115,7 @@ function displayWineCard(wine) {
     wineCard.innerHTML = `
         <button class="close-button">&times;</button> 
         <div class="card-image">
-            <img src="${wine.image}" alt="${wine.alt}">
+            <img src="${wine.image}" alt="${wine.alt || 'Wine image not available'}">
         </div>
         <aside>
             <h2>${wine.name}</h2>
@@ -119,8 +134,8 @@ function displayWineCard(wine) {
 
     // Add close button functionality
     const closeButton = wineCard.querySelector(".close-button");
-    closeButton.addEventListener("click", () => {
-        wineCard.remove(); // Remove the wine card from the DOM
+    wineCard.querySelector(".close-button").addEventListener("click", () => {
+        wineCard.remove();
     });
 }
 
