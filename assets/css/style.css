@@ -80,8 +80,8 @@ h1{
     position: absolute;
     font-size: 40px;
     align-self: center;
-    top: 30%;
-    color: var(--pure-white);
+    top: 35%;
+    color: white;
 }
 .image-container{
     position: absolute;
@@ -313,10 +313,12 @@ footer {
     .nav-list {
         gap: 30px;
     }
-
+    .image-container{
+        top:10%;
+    }
     .image-container img {
-        width: 300px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
     }
 
     .search-section {
