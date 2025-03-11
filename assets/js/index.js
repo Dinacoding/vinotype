@@ -32,6 +32,7 @@ fetch("wines.json")
         console.error("Error fetching wine data:", error);
     });
 
+searchInput.addEventListener("input", searchWines);
 searchButton.addEventListener("click", displayWinesCards);
 
 
@@ -47,7 +48,7 @@ function searchWines() {
     console.log("Search button clicked!");
     const query = searchInput.value.toLowerCase(); 
     resultsBox.innerHTML = ""; 
-    
+
     // If query is empty, hide the results and remove "expanded" class
     if (query.trim() === "") {
         resultsBox.style.display = "none";
@@ -123,7 +124,7 @@ function displayWineCard(wine) {
     // Add close button functionality
     const closeButton = wineCard.querySelector(".close-button");
     closeButton.addEventListener("click", () => {
-        wineCard.remove();
+        closeWineCard.remove();
     });
 }
 
