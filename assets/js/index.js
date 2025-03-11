@@ -45,7 +45,7 @@ clearButton.addEventListener("click", () => {
 // Function to perform the wine search
 function searchWines() {
     console.log("Search button clicked!");
-    const query = searchInput.value.toLowerCase(); // Get value from INPUT
+    const query = searchInput.value.toLowerCase(); 
     resultsBox.innerHTML = "";
 
     if (query.trim() === "") {
@@ -70,7 +70,6 @@ function searchWines() {
         filteredWines.forEach(wine => {
             const li = document.createElement("li");
             li.classList.add("wine-list");
-            li.dataset.name = wine.name;
             li.innerHTML = `<strong>${wine.name}</strong> (${wine.year}) - ${wine.color}, ${wine.country}`;
             li.onclick = () => {
                 displayWineCard(wine);
