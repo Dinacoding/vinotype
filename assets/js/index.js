@@ -67,6 +67,9 @@ function searchWines() {
     searchBar.classList.add("expanded");
 
     if (filteredWines.length > 0) {
+        displayWineCard(filteredWines[0]);
+        
+        } else if (filteredWines.length > 1) {
         filteredWines.forEach(wine => {
             const li = document.createElement("li");
             li.classList.add("wine-list");
@@ -135,7 +138,7 @@ function displayWineCard(wine) {
     const wineCard = document.createElement("div");
     wineCard.classList.add("wine-card");
     wineCard.innerHTML = `
-        <button class="close-button">&times;</button> <!-- ✅ Close Button -->
+        <button class="close-button">&times;</button> 
         <div class="card-image">
         <img src="${wine.image}" alt="${wine.alt}">
         </div>
