@@ -31,7 +31,7 @@ fetch("wines.json")
 // Ensure the event listener is attached correctly
 searchButton.addEventListener("click", () => {
     console.log("Search button clicked!");
-    searchWines();
+    displayWineCard();
 });
 
 // Ensure the event listener is attached correctly
