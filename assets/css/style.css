@@ -21,7 +21,6 @@
 
     }
     body{
-        overflow: hidden;
     }
     /*Navbar styling*/
     #header{
@@ -362,7 +361,8 @@
     /* Large screens (1200px and above) */
     @media (min-width: 1200px) {
         body{
-            height: 100vh;
+            min-height: 80vh;
+            height: auto;
         }
         .nav-list {
             gap: 50px;
@@ -398,7 +398,8 @@
     /* Very large screens (1920px and above) */
     @media (min-width: 1920px) {
         .search-section{
-            height: 100vh;
+            min-height: 100vh;
+            height: auto
         }
         .nav-list {
             gap: 60px;
