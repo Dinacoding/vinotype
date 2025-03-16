@@ -361,6 +361,9 @@
 
     /* Large screens (1200px and above) */
     @media (min-width: 1200px) {
+        body{
+            height: 100vh;
+        }
         .nav-list {
             gap: 50px;
             font-size: 18px;
