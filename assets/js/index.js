@@ -131,6 +131,14 @@ function displayWineCard(wine) {
     wineCard.querySelector(".close-button").addEventListener("click", () => {
         wineCard.remove();
     });
+
+    // Position the wine card below the search bar
+    const searchBarRect = searchBar.getBoundingClientRect();
+    wineContainer.style.position = 'absolute';
+    wineContainer.style.top = `${searchBarRect.bottom + 10}px`; // 10px spacing
+    wineContainer.style.left = `${searchBarRect.left}px`;
+    wineContainer.style.width = `${searchBarRect.width}px`;
+
 }
 
 // Close results box when clicking outside of the search bar
