@@ -125,7 +125,7 @@ function displayWineCard(wine) {
 
     wineContainer.hidden = false;
     wineContainer.appendChild(wineCard);
-
+}
 // Add close button functionality
 const closeButton = wineCard.querySelector(".close-button");
 closeButton.addEventListener("click", () => wineCard.remove());
