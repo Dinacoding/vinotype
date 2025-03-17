@@ -128,9 +128,7 @@ function displayWineCard(wine) {
 
     // Add close button functionality
     const closeButton = wineCard.querySelector(".close-button");
-    wineCard.querySelector(".close-button").addEventListener("click", () => {
-        wineCard.remove();
-    });
+    closeButton.addEventListener("click", () => wineCard.remove());
 
     // Position the wine card below the search bar
     const searchBarRect = searchBar.getBoundingClientRect();
@@ -139,9 +137,16 @@ function displayWineCard(wine) {
     wineContainer.style.left = `${searchBarRect.left}px`;
     wineContainer.style.width = `${searchBarRect.width}px`;
 
+    const isMobile = window.innerWidth < 768;
+        if (isMobile) {
+    wineContainer.style.position = "relative";
+        } else {
+    wineContainer.style.position = "absolute";
+    }
+
      // apply flex display to the wine container.
      wineContainer.style.display = 'flex';
-     wineContainer.style.flexWrap = 'wrap'; // allow cards to wrap to next line.
+     wineContainer.style.flexWrap = 'wrap'; 
      wineContainer.style.gap = '10px'; //
 
 }
