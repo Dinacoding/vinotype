@@ -139,6 +139,11 @@ function displayWineCard(wine) {
     wineContainer.style.left = `${searchBarRect.left}px`;
     wineContainer.style.width = `${searchBarRect.width}px`;
 
+     // apply flex display to the wine container.
+     wineContainer.style.display = 'flex';
+     wineContainer.style.flexWrap = 'wrap'; // allow cards to wrap to next line.
+     wineContainer.style.gap = '10px'; //
+
 }
 
 // Close results box when clicking outside of the search bar
