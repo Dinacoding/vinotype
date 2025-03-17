@@ -87,13 +87,15 @@
 
     .image-container{
         position: absolute;
-        top:20%;
+        top:10%;
         align-self: center;
+
     }
 
     .image-container img{
-        max-width: 100%;
         height: auto;
+        max-width: 300px;
+
     }
     .search-wrapper{
         width: 80%; 
