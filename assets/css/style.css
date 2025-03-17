@@ -164,6 +164,11 @@
     }
 
     #wine-container{
+        position: relative; 
+        margin-top: 20px; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         
     }
     /* JavaScript code */
@@ -176,8 +181,8 @@
         position: relative;
         max-width: 400px;
         gap: 20px;
-        flex: 1 1 300px; /* Adjust width as needed */
-        min-width: 200px; /* set a min width */
+        flex: 1 1 300px; 
+        min-width: 200px; 
     }
 
     .wine-card h2{
