@@ -139,16 +139,18 @@ The HTML and CSS components of the Vinotype web application were subjected to ri
 
 On desktop, Vinotype web application demonstrates strong performance, scoring a perfect 100 in both Performance and Best Practices categories in the Lighthouse audit. The application also excels in SEO, achieving a 100 score, indicating excellent search engine optimization. While Accessibility scored a commendable 96, it suggests there's room for minor improvements to ensure a more inclusive user experience. Overall, these results highlight the application's robust technical foundation, efficient loading times, adherence to best web development practices, and strong visibility in search engines.
 
-- [Desktop](lighthouse/lighthouse-desktop.png)
+- [Desktop](documentation/lIghthouse/lighthouse-desktop.png)
 
 On the phone,  web application showcases strong performance in key areas, as evidenced by the Lighthouse audit. Achieving a perfect 100 in both Best Practices and SEO demonstrates excellent adherence to web development standards and robust search engine optimization.  Accessibility scores a commendable 96, indicating a high level of inclusivity with potential for minor enhancements. While Performance scores 91, it still reflects a well-optimised application with room for further improvements to ensure optimal loading times and user experience. Overall, the Vinotype application demonstrates a solid foundation and a commitment to quality across critical web development metrics.
 
-- [Phone](lighthouse/lighthouse-phone.png)
+- [Phone](documentation/lighthouse/lighthouse-phone.png)
 
 
+### JsLint Testing
 
+The JSLint analysis of JavaScript code. The tool has identified several warnings, primarily related to code style and formatting. These include unexpected trailing spaces, lines exceeding 80 characters, and the use of single quotes instead of double quotes. While these warnings suggest areas for improvement in code readability and maintainability, they do not indicate critical errors that would prevent the JavaScript code from functioning. The warnings are stylistic suggestions and best practices, not indicators of broken or compromised functionality. The code's core logic, including DOM manipulation and event handling, remains intact.
 
-
+- [Jslint](documentation/JSlint.png)
 
 
 
