@@ -143,6 +143,7 @@ h1 {
 .search-container i {
   font-size: medium;
   background: transparent;
+  color: var(--dark-black);
 }
 .search-container i:hover,
 .search-container button:hover {
