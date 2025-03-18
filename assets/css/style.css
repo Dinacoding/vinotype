@@ -165,17 +165,21 @@ h1 {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
-
-#wine-container {
+.carousel #wine-container {
   display: flex;
   justify-content: center;
+}
+#wine-container {
+  display: block;
+  justify-content: center;
   z-index: 10;
+  width: 100%;
 }
 /* JavaScript code */
 .wine-card {
-  display:flez;
+  display: flex;
   align-items: center;
-  flex: 1 1 300px;
+  justify-content: space-around;
   min-width: 200px;
   transition: transform 0.1s ease-in-out;
   margin-right: 10px;
@@ -187,7 +191,7 @@ h1 {
 }
 
 .wine-card h2 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .wine-card h3 {
@@ -216,7 +220,8 @@ h1 {
 }
 .close-button:hover {
   color: var(--deep-red);
-}x
+}
+x
 
 /* Hide scrollbar */
 .carousel::-webkit-scrollbar {
@@ -341,28 +346,31 @@ footer {
   .search-container i {
     font-size: 10px;
   }
+  .carousel {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+  }
 
-   #wine-container {
-        width: 100%;
-        margin-top: 20px; 
-        display: block; 
-    }
-    .wine-card {
-        width: 100%; 
-        margin-right: 0; 
-        margin-bottom: 20px;
-    }
-    .card-title {
-        font-size: 12px;
-        font-weight: bold;
-    }
-    
-      .card-text {
-        font-size: 10px;
-    }
-  
+  #wine-container {
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+  }
+  .wine-card {
+    flex: 0 0 100%; /* Each card takes the full width */
+    scroll-snap-align: center; /* Ensures smooth scrolling */
+    width: 100%;
+    margin-right: 0;
+  }
+  .wine-card h2 {
+    font-size: 16px; /* Adjusted for readability */
+  }
+
+  .wine-card p {
+    font-size: 12px;
+  }
 }
-
 
 /* Medium screens (1024px and above) */
 @media (min-width: 1023px) {
