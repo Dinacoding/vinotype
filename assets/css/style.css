@@ -158,6 +158,8 @@ h1 {
   margin: auto;
   overflow: hidden;
   padding-top: 20px;
+  z-index: 11;
+
 }
 
 .carousel {
@@ -165,6 +167,7 @@ h1 {
   overflow-x: scroll;
   scroll-behavior: smooth;
   overflow: hidden;
+
 
 }
 #wine-container {
@@ -239,7 +242,6 @@ x
   font-size: 24px;
   cursor: pointer;
   padding: 10px;
-  z-index: 11;
 }
 
 .prev-btn {
