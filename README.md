@@ -139,6 +139,16 @@ The HTML and CSS components of the Vinotype web application were subjected to ri
 ![HTML](documentation/validator.w3.org_nu_%20(6).png)
 ![CSS](documentation/jigsaw.w3.org_css-validator_validator%20(3).png)
 
+### Lighthouse
+
+ On desktop, Vinotype web application demonstrates strong performance, scoring a perfect 100 in both Performance and Best Practices categories in the Lighthouse audit. The application also excels in SEO, achieving a 100 score, indicating excellent search engine optimization. While Accessibility scored a commendable 96, it suggests there's room for minor improvements to ensure a more inclusive user experience. Overall, these results highlight the application's robust technical foundation, efficient loading times, adherence to best web development practices, and strong visibility in search engines.
+
+![Desktop](lighthouse/lighthouse-desktop.png)
+
+On the phone,  web application showcases strong performance in key areas, as evidenced by the Lighthouse audit. Achieving a perfect 100 in both Best Practices and SEO demonstrates excellent adherence to web development standards and robust search engine optimization.  Accessibility scores a commendable 96, indicating a high level of inclusivity with potential for minor enhancements. While Performance scores 91, it still reflects a well-optimised application with room for further improvements to ensure optimal loading times and user experience. Overall, the Vinotype application demonstrates a solid foundation and a commitment to quality across critical web development metrics.
+
+![Phone](lighthouse/lighthouse-phone.png)
+
 
 
 
