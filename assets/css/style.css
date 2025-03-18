@@ -89,12 +89,13 @@
         position: absolute;
         top:10%;
         align-self: center;
-        max-width: 300px;
+        max-width: 150px;
 
     }
 
     .image-container img{
         height: auto;
+        width: 100%;
 
     }
     .search-wrapper{
@@ -332,6 +333,7 @@
         }
         .image-container{
             top:10%;
+            max-width: 350px;
         }
         h1{
             font-size: 6.5rem;
