@@ -73,7 +73,7 @@ h1 {
   font-size: 40px;
   align-self: center;
   top: 35%;
-  color: var(--pure-white);
+  color:var(--pure-white);
 }
 
 .image-container {
@@ -329,7 +329,6 @@ footer {
   }
   h1 {
     font-size: 6.5rem;
-    color: var(--dark-black);
   }
   .image-container img {
     width: 200px;
