@@ -173,6 +173,8 @@ h1 {
 }
 /* JavaScript code */
 .wine-card {
+  display:flez;
+  align-items: center;
   flex: 1 1 300px;
   min-width: 200px;
   transition: transform 0.1s ease-in-out;
