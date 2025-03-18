@@ -499,4 +499,17 @@ footer {
   .card-wrapper {
     width: 40%;
   }
+
+  .wine-card h2 {
+    font-size: 1.2rem;
+  }
+  
+  .wine-card h3 {
+    font-size: 10px;
+  }
+  
+  .wine-card p {
+    font-size: 0.9em;
+    margin-bottom: 0.4rem;
+  }
 }
