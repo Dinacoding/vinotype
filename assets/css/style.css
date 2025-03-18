@@ -157,20 +157,18 @@ h1 {
   width: 80%;
   margin: auto;
   overflow: hidden;
+  padding-top: 20px;
 }
 
 .carousel {
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-.carousel #wine-container {
-  display: flex;
-  justify-content: center;
+  overflow: hidden;
+
 }
 #wine-container {
-  display: block;
+  display: flex;
   justify-content: center;
   z-index: 10;
   width: 100%;
@@ -188,6 +186,7 @@ h1 {
   border-radius: 8px;
   padding: 20px;
   position: relative;
+  scroll-snap-align: start;
 }
 
 .wine-card h2 {
@@ -240,7 +239,7 @@ x
   font-size: 24px;
   cursor: pointer;
   padding: 10px;
-  z-index: 10;
+  z-index: 11;
 }
 
 .prev-btn {
@@ -358,13 +357,12 @@ footer {
     display: block;
   }
   .wine-card {
-    flex: 0 0 100%; /* Each card takes the full width */
-    scroll-snap-align: center; /* Ensures smooth scrolling */
+    flex: 0 0 100%; 
     width: 100%;
     margin-right: 0;
   }
   .wine-card h2 {
-    font-size: 16px; /* Adjusted for readability */
+    font-size: 16px; 
   }
 
   .wine-card p {
