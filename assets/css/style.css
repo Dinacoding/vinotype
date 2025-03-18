@@ -172,6 +172,7 @@ h1 {
   padding: 20px;
   position: relative;
   scroll-snap-align: start;
+  gap:10px;
 }
 
 .wine-card h2 {
