@@ -92,18 +92,14 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 - Phone
 ![Hero and Search](documentation/vinotype-wireframes/vinotype-wireframe-ph.png)
 ![Wine Card](documentation/vinotype-wireframes/vinotype-wireframe-ph-card.png)
-![Region Card](documentation/vinotype-wireframes/vinotype-wireframe-ph-region.png)
-![Result and Card](documentation/vinotype-wireframes/vinotype-wireframe-result-card.png)
 
 - Tablet
 ![Hero and Search](documentation/vinotype-wireframes/vinotype-wireframe-tb.png)
 ![Wine Card](documentation/vinotype-wireframes/vinotype-wireframe-tb-wine.png)
-![Region Card](documentation/vinotype-wireframes/vinotype-wireframe-tb-region.png)
-![Result and Card](documentation/vinotype-wireframes/vinotype-wireframe-tb-result-card.png)
+
 
 - Desktop
 ![Hero and Search](documentation/vinotype-wireframes/vinotype-wireframe-desk.png)
-![Wine Card and Wine Regions](documentation/vinotype-wireframes/vinotype-wireframe-desk-wine-region.png)
 ![Result and Card](documentation/vinotype-wireframes/vinotype-wireframe-desk-result-card.png)
 
 ## Designer Choices
