@@ -137,8 +137,8 @@ h1 {
 .search-container button {
   border: 0;
   border-radius: 50%;
-  min-width: 40px;
-  min-height: 40px;
+  min-width: 20px;
+  min-height: 20px;
   background: transparent;
 }
 
@@ -176,10 +176,16 @@ h1 {
   flex: 1 1 300px;
   min-width: 200px;
   transition: transform 0.1s ease-in-out;
+  margin-right: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
 }
 
 .wine-card h2 {
-  font-size: 14px;
+  font-size: 1.2em;
 }
 
 .wine-card h3 {
@@ -187,7 +193,7 @@ h1 {
 }
 
 .wine-card p {
-  font-size: 8px;
+  font-size: 0.9em;
   margin-bottom: 0.4rem;
 }
 
@@ -208,7 +214,7 @@ h1 {
 }
 .close-button:hover {
   color: var(--deep-red);
-}
+}x
 
 /* Hide scrollbar */
 .carousel::-webkit-scrollbar {
