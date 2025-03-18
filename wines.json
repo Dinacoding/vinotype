@@ -86,49 +86,5 @@
     "tastingNotes": "Citrus, white peach, and flinty minerality.",
     "pairingSuggestions": "Excellent with oysters, grilled fish, and goat cheese.",
     "image": "assets/images/white.jpg"
-  },
-  {
-    "name": "Moët & Chandon Brut Impérial",
-    "grape": "Chardonnay",
-    "year": 2018,
-    "color": "Sparkling",
-    "country": "France",
-    "description": "A famous French Champagne with fine bubbles and creamy elegance.",
-    "tastingNotes": "Green apple, brioche, and floral hints.",
-    "pairingSuggestions": "Perfect with caviar, soft cheeses, and strawberries.",
-    "image": "assets/images/sparkling.jpg"
-  },
-  {
-    "name": "Barolo Marchesi di Barolo",
-    "grape": "Nebbiolo",
-    "year": 2018,
-    "color": "Red",
-    "country": "Italy",
-    "description": "A rich and intense Italian red with floral aromas and a long-lasting finish.",
-    "tastingNotes": "Rose, cherry, tar, and earthy undertones.",
-    "pairingSuggestions": "Pairs well with truffle pasta, braised meats, and aged cheeses.",
-    "image": "assets/images/red.jpg"
-  },
-  {
-    "name": "Brunello di Montalcino Biondi Santi",
-    "grape": "Sangiovese",
-    "year": 2017,
-    "color": "Red",
-    "country": "Italy",
-    "description": "A structured and long-lived Tuscan red with deep cherry and spice flavors.",
-    "tastingNotes": "Dark cherry, leather, tobacco, and spice.",
-    "pairingSuggestions": "Great with roasted lamb, wild boar, and hard cheeses.",
-    "image": "assets/images/red.jpg"
-  },
-  {
-    "name": "Franciacorta Bellavista",
-    "grape": "Pinot Nero",
-    "year": 2017,
-    "color": "Sparkling",
-    "country": "Italy",
-    "description": "An Italian sparkling wine with rich complexity and vibrant acidity.",
-    "tastingNotes": "Ripe pear, almond, and fresh citrus.",
-    "pairingSuggestions": "Enjoy with seafood risotto, antipasti, and soft cheeses.",
-    "image": "assets/images/sparkling.jpg"
   }
 ]
