@@ -139,3 +139,17 @@ document.addEventListener("click", (e) => {
         searchBar.classList.remove("expanded");
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector(".carousel");
+    const prevBtn = document.querySelector(".prev-btn");
+    const nextBtn = document.querySelector(".next-btn");
+
+    prevBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: -300, behavior: "smooth" });
+    });
+
+    nextBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: 300, behavior: "smooth" });
+    });
+});
