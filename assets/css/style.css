@@ -340,15 +340,27 @@ footer {
     font-size: 10px;
   }
 
-  .card-title {
-    font-size: 12px;
-    font-weight: bold;
-  }
-
-  .card-text {
-    font-size: 10px;
-  }
+   #wine-container {
+        width: 100%;
+        margin-top: 20px; 
+        display: block; 
+    }
+    .wine-card {
+        width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 20px;
+    }
+    .card-title {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+      .card-text {
+        font-size: 10px;
+    }
+  
 }
+
 
 /* Medium screens (1024px and above) */
 @media (min-width: 1023px) {
