@@ -131,6 +131,20 @@ This color scheme summons the world of wine and  creates a sophisticated user ex
 - [ChatGPT](https://chatgpt.com/), to use it to create content for the website and get me a color palette 
 - [W3school] (https://www.w3schools.com/) to review some concepts about code;
 
+### Validator Testing 
+
+The HTML and CSS components of the Vinotype web application were subjected to rigorous validation using the W3C Markup Validation Service and the W3C CSS Validation Service, respectively. Both the HTML and CSS documents successfully passed validation, confirming adherence to established web standards. This validation process ensures the structural integrity and cross-browser compatibility of the application. . Compliance with W3C standards contributes to enhanced accessibility, improved performance, and a consistent user experience. The successful validation of the Vinotype application's codebase demonstrates a commitment to quality and best practices in web development.
+
+
+![HTML](documentation/validator.w3.org_nu_%20(6).png)
+![CSS](documentation/jigsaw.w3.org_css-validator_validator%20(3).png)
+
+
+
+
+
+
+
 
 ### How to run this project locally 
 
