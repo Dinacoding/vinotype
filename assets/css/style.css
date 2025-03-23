@@ -73,7 +73,7 @@ h1 {
   font-size: 40px;
   align-self: center;
   top: 35%;
-  color:var(--pure-white);
+  color:var(--pure-white) !important;
 }
 
 .image-container {
@@ -417,6 +417,10 @@ footer {
   .search-bar input {
     font-size: 2rem; /* Increased font size for larger screens */
     padding: 28px; /* Increased padding for better accessibility */
+  }
+
+  h1{
+    font-size:10rem;
   }
 
   .search-container button {
