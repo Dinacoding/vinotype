@@ -20,7 +20,7 @@
 
 ![Logo](documentation/vinotype.png)
 
-Vinotype is your pocket sommelier, helping you discover wines you will absolutely love. Our personalised recommendations and notes unlock a world of delicious wines, ensuring every bottle is a delightful discovery. Experience the joy of finding wines you truly adore with Vinotype.
+Vinotype is your pocket sommelier, helping you discover wines you will absolutely love. Our personalised recommendations and notes unlock a world of delicious wines, ensuring every bottle is a delightful discovery. Experience the joy of finding wines you truly adore with Vinotype. This Website has as inspiration the [https://www.wine-searcher.com/?srsltid=AfmBOopZOVGu-N9XM0fXeEQeysnlq_7rkbFPYTzGP_8KPMwVLLQsLAJs]
 
 Visit the site here Live site: [https://dinacoding.github.io/vinotype/](https://dinacoding.github.io/vinotype/)
 
@@ -205,7 +205,8 @@ This colour scheme brings the world of wine and creates a sophisticated UX exper
 - [Inkscape](https://inkscape.org/), to design the logo;
 - [Balsamiq](https://balsamiq.com/), used it to wireframe the webpages;
 - [ChatGPT](https://chatgpt.com/), to use it to create content for the website and get me a color palette 
-- [W3school] (https://www.w3schools.com/) to review some concepts about code;
+- [W3school](https://www.w3schools.com/) to review some concepts about code;
+- [Gemini](https://gemini.google.com/app/a427d05ca7bf78c3) for correcting and questions code,website content, for the wine.json and correction.
 
 
 ### Future Improvements 
