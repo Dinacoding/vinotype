@@ -154,15 +154,13 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 
 ## Designer Choices
 
+Vinotype is design to sustain a visually appealing approach, emphasising warm, elegant tones that embrace the wine theme. The color palette consists of deep reds, warm beiges, and soft peaches. It blends a sense of sophistication and richness, ideal for a wine-related website. It also ensures that the layout stays resposive and is adaptable. It aims to cater the flexible layout ensures responsive adaptability, different screen sizes with well-structured media queries. The root variables allow for easy theme adjustments, while the subtle opacity variations create depth and layering effects. Overall, the design effectively balances aesthetics, readability, and functionality, making it both user-friendly and visually immersive.
+
 ### Color scheme
 
 ![Palette](documentation/color-palette.png)
 
-This color scheme summons the world of wine and  creates a sophisticated user experience. The deep Wine Red primary color symbolises the passion and depth associated with wine. The Aged Oak secondary color adds a touch of natural elegance. The soft Rose Beige accents provide a warm and inviting touch, while the Charcoal Black background creates a sleek and modern backdrop. This combination of colors not only aligns with the theme of your wine-focused website but also ensures a user-friendly experience with high contrast and readability.
-
-
-
-### Typography
+This colour scheme brings the world of wine and creates a sophisticated UX experience. From the deep wine red primary that immerses the passion and the aromatic flavours associated with wine. Age oak add provokes a sense of natural elements and the Rose Beige provides a welcoming element while the Charcoal Black background creates a sleek and modern backdrop. This combination of colors not only aligns with the theme of your wine-focused website but also ensures a user-friendly experience with high contrast and readability.
 
 
 ## Technology used
@@ -182,6 +180,24 @@ The HTML and CSS components of the Vinotype web application were subjected to ri
 
 ![HTML](documentation/validator.w3.org_nu_%20(6).png)
 ![CSS](documentation/jigsaw.w3.org_css-validator_validator%20(3).png)
+
+### Future Improvements 
+
+1. Enhanced Typography for Elegance
+- Adjust line height and letter spacing for better readability.
+
+2. Animations for Engagement
+- Add a smooth fade-in effect when wine cards appear
+- Animate the menu toggle for a more dynamic interaction
+
+3. Wine Card Enhancements
+- Introduce a carousel or grid layout for wine cards, improving organization.
+- Make wine cards expandable, revealing more details on click   
+
+4. Change language button option
+- To make your content more accessible to a global audience.
+- Language Content Availability: Ensure that you have all necessary content translated and ready for the languages you support.
+
 
 
 
