@@ -89,9 +89,11 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 
 * When clicked a menu drops down
 
-[menu](documentation/features/Screenshot%202025-03-18%20074201.png)
+![menu](documentation/features/Screenshot%202025-03-18%20074201.png)
 
 2. Search bar, it is on the content area in the Hero Section 
+
+
 ![Search-Bar](documentation/features/search-bar.png)
 
 * It allows the user to search for the wine using the name, the region or information about the wine.
@@ -106,8 +108,11 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 - The fetch API allows the application to dynamically load data without reloading the entire page.
 
 * Wine search functionality
+
 ![search-by-name](documentation/features/name-search.png)
+
 ![search-by-country](documentation/features/country.png)
+
 ![search-by-grape](documentation/features/grape-search.png)
 
 * When the wine is not find is displays a not found message
