@@ -177,7 +177,23 @@ Vinotype is design to sustain a visually appealing approach, emphasising warm, e
 
 ![Palette](documentation/color-palette.png)
 
-This colour scheme brings the world of wine and creates a sophisticated UX experience. From the deep wine red primary that immerses the passion and the aromatic flavours associated with wine. Age oak add provokes a sense of natural elements and the Rose Beige provides a welcoming element while the Charcoal Black background creates a sleek and modern backdrop. This combination of colors not only aligns with the theme of your wine-focused website but also ensures a user-friendly experience with high contrast and readability.
+This colour scheme brings the world of wine and creates a sophisticated UX experience. From the deep wine red primary that immerses the passion and the aromatic flavours associated with wine. Age oak add provokes a sense of natural elements and the Rose Beige provides a welcoming element while the Charcoal Black background creates a sleek and modern backdrop. This combination of colors not only aligns with the theme of your wine-focused website but also ensures a user-friendly experience with high contrast and readability. The logo and the hero image, hence the illustrations at the wine cards were hand made by me.
+
+### Images
+
+**hero**
+[logo](assets/images/vinotype.png)
+[favicon](assets/images/favicon/)
+[hero](assets/css/images/hero-img.jpg)
+[hero-image](assets/images/vinotype-white.png)
+**wine-card**
+[red](assets/images/red.jpg)
+[white](assets/images/white.jpg)
+[sparkling](assets/images/sparkling.jpg)
+[sweet](assets/images/sweet.jpg)
+
+
+
 
 
 ## Technology used
