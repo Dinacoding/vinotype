@@ -208,6 +208,8 @@ This colour scheme brings the world of wine and creates a sophisticated UX exper
 - To make your content more accessible to a global audience.
 - Language Content Availability: Ensure that you have all necessary content translated and ready for the languages you support.
 
+5. Realise the test of the functions with Jest
+
 
 ### Testing 
 Please follow this link [Click Here](TESTING.md) to view the full testing steps that were completed on every device and browser.
