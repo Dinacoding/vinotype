@@ -211,6 +211,98 @@ This colour scheme brings the world of wine and creates a sophisticated UX exper
 ### Testing 
 Please follow this link [Click Here](TESTING.md) to view the full testing steps that were completed on every device and browser.
 
+### Bugs
+
+- **Search Bar Overlap**: The search bar sometimes overlaps the UI elements.
+**How I fixed it:**
+```css
+/* Styles for the search bar */
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+```
+
+- **Misaligned Search Results**: Inconsistent formatting of search suggestions.
+**How I fixed it:**
+```css
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid var(--dark-black-opacity);
+}
+
+#results {
+  background-color: var(--pure-white);
+  z-index: 2;
+  width: 100%;
+  padding: 8px;
+  padding-right: 8px;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+}
+```
+
+
+- **Logo Visibility Issue**: The logo gets obstructed by the search bar in certain views.
+    ![Logo](documentation/bugs/logo.png)
+    **How I fixed it:**
+``` css
+ #header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--warm-beige);
+  padding: 10px;
+  width: 100%;
+}
+```
+
+- **Inconsistent Search Bar Positioning**: The search bar placement varies in different views.
+![search-bar](documentation/bugs/results-box.png)
+![search-bar](documentation/bugs/results-box1.png)
+![search-bar](documentation/bugs/results-box2.png)
+
+**How I fixed it:**
+
+``` css
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0px 2px 5px var(--dark-black-opacity);
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid var(--dark-black-opacity);
+}
+
+```
+
+
+
+
+
+- **Lack of Search Filtering**: No clear categorization of search results.
+
+
+
+
 ### How to run this project locally 
 
 1. Download the Git installer:
