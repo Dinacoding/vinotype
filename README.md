@@ -116,6 +116,7 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 ![search-by-grape](documentation/features/grape-search.png)
 
 * When the wine is not find is displays a not found message
+
 ![Not found](documentation/features/nofound-message.png)
 
 3. Interactivity
