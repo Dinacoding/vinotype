@@ -1,4 +1,7 @@
-## Functionality testing
+
+## Testing
+
+### Functionality testing
 
 | **Description of Test**                                           | **Passed (Yes/No)** | **Notes or Comments**                         |
 |-------------------------------------------------------------------|---------------------|-----------------------------------------------|
@@ -20,4 +23,24 @@
 |Test the console.log of the displayWineCard function, wine container and wineCard| Yes | Tested in the console|
 
 
+###  **Responsiveness & Cross-Browser Compatibility**
 
+| **Tested On** | **Status** | **Notes** |
+|--------------|-----------|----------|
+| Google Chrome | Passed | Fully functional |
+| Mozilla Firefox | Not passed |  |
+| Microsoft Edge | Not passed |  |
+| Safari | Passed | Fully functional |
+| Mobile (iOS) | Not Passed | Responsive layout confirmed |
+
+
+
+### **Performance & Accessibility Testing**
+
+| **Test Description** | **Status** | **Notes** |
+|----------------------|-----------|----------|
+| Page load speed | Passed | No significant delays in fetching data |
+| Images have descriptive `alt` attributes | Passed | Verified for accessibility |
+| Keyboard navigation works as expected | Passed | Users can navigate without a mouse |
+| Contrast and readability checks | Passed | Text is legible with appropriate contrast |
+| Screen reader compatibility | Passed | Tested with screen reader tools |
