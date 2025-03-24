@@ -182,15 +182,16 @@ This colour scheme brings the world of wine and creates a sophisticated UX exper
 ### Images
 
 **hero**
-[logo](assets/images/vinotype.png)
-[favicon](assets/images/favicon/)
-[hero](assets/css/images/hero-img.jpg)
-[hero-image](assets/images/vinotype-white.png)
+- [logo](assets/images/vinotype.png)
+- [favicon](assets/images/favicon/)
+- [hero](assets/css/images/hero-img.jpg)
+- [hero-image](assets/images/vinotype-white.png)
+
 **wine-card**
-[red](assets/images/red.jpg)
-[white](assets/images/white.jpg)
-[sparkling](assets/images/sparkling.jpg)
-[sweet](assets/images/sweet.jpg)
+- [red](assets/images/red.jpg)
+- [white](assets/images/white.jpg)
+- [sparkling](assets/images/sparkling.jpg)
+- [sweet](assets/images/sweet.jpg)
 
 
 
