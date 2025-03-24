@@ -78,3 +78,11 @@ The JSLint analysis of JavaScript code. The tool has identified several warnings
 
 - [Jslint](documentation/JSlint.png)
 
+
+### Validator Testing 
+
+The HTML and CSS components of the Vinotype web application were subjected to rigorous validation using the W3C Markup Validation Service and the W3C CSS Validation Service, respectively. Both the HTML and CSS documents successfully passed validation, confirming adherence to established web standards. This validation process ensures the structural integrity and cross-browser compatibility of the application. . Compliance with W3C standards contributes to enhanced accessibility, improved performance, and a consistent user experience. The successful validation of the Vinotype application's codebase demonstrates a commitment to quality and best practices in web development.
+
+
+![HTML](documentation/validator.w3.org_nu_%20(6).png)
+![CSS](documentation/jigsaw.w3.org_css-validator_validator%20(3).png)

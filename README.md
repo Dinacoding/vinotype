@@ -1,5 +1,22 @@
 # Vinotype
 
+## Table of Contents
+
+1. [Header](#header)
+    - [Subheader](#subheader)
+2. [Table of Contents](#table-of-contents)
+3. [User Experience Ux](#user-experience)
+    -  [User Goals](#user-goals)
+    -  [User Story](#user-stories)
+4. [Planning](#planning)
+5. [Features](#features)
+6. [Wireframes](#wizard-adventures)
+7. [Designer Choices](#designer-choices)
+8. [Technology Used](#technology-used)
+9. [How to run the project locally](#how-to-run-this-project-locally)
+10. [To clone this project](#to-clone-this-project-from-github)
+
+
 
 ![Logo](documentation/vinotype.png)
 
@@ -173,13 +190,6 @@ This colour scheme brings the world of wine and creates a sophisticated UX exper
 - [ChatGPT](https://chatgpt.com/), to use it to create content for the website and get me a color palette 
 - [W3school] (https://www.w3schools.com/) to review some concepts about code;
 
-### Validator Testing 
-
-The HTML and CSS components of the Vinotype web application were subjected to rigorous validation using the W3C Markup Validation Service and the W3C CSS Validation Service, respectively. Both the HTML and CSS documents successfully passed validation, confirming adherence to established web standards. This validation process ensures the structural integrity and cross-browser compatibility of the application. . Compliance with W3C standards contributes to enhanced accessibility, improved performance, and a consistent user experience. The successful validation of the Vinotype application's codebase demonstrates a commitment to quality and best practices in web development.
-
-
-![HTML](documentation/validator.w3.org_nu_%20(6).png)
-![CSS](documentation/jigsaw.w3.org_css-validator_validator%20(3).png)
 
 ### Future Improvements 
 
@@ -200,7 +210,7 @@ The HTML and CSS components of the Vinotype web application were subjected to ri
 
 
 ### Testing 
-Please follow this link [TESTING.md](https://vscode.dev/github/Dinacoding/vinotype/blob/main/TESTING.md).
+Please follow this link [Click Here](TESTING.md) to view the full testing steps that were completed on every device and browser.
 
 ### How to run this project locally 
 
