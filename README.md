@@ -194,7 +194,13 @@ This colour scheme brings the world of wine and creates a sophisticated UX exper
 - [sweet](assets/images/sweet.jpg)
 
 
+### Media attributions
 
+
+**Wine Cellar Image:**
+Image by [Photo by Medhat Ayad from Pexels](https://www.pexels.com/photo/black-wooden-wine-shelves-on-brown-wall-451832/) 
+
+The image features a stylish wine cellar with a scenic background.
 
 
 ## Technology used
@@ -314,10 +320,6 @@ Please follow this link [Click Here](TESTING.md) to view the full testing steps 
 
 ```
 
-
-
-
-
 - **Lack of Search Filtering**: No clear categorization of search results.
 ![results](documentation/bugs/results.png)
 
@@ -381,7 +383,68 @@ function searchWines() {
     - The resultsBox is displayed and the function creates a <li> element for each matching wine, displaying its name, year, color, and country.
 6. Handles No Results - <strong>Wine not found!</strong> Try another search.
 
+## Code Snippet Attribution
 
+These code snippets where taken and modified from these sources 
+- MDN Web Docs - Search Functionality
+- [https://github.com/Rayrsn] - [https://github.com/Rayrsn/JC141-Search/blob/master/search.js]
+
+**1. Menu Toggle Functionality:**
+
+```javascript
+const menuToggle = document.querySelector(".menu-toggle");
+const navList = document.querySelector(".nav-list");
+
+menuToggle.addEventListener("click", () => {
+    navList.classList.toggle("appear");
+    console.log("Menu toggled!");
+});
+```
+
+```javascript
+function searchWines() {
+    console.log("Search button clicked!");
+    const query = searchInput.value.toLowerCase();
+    resultsBox.innerHTML = "";
+
+    if (query.trim() === "") {
+        resultsBox.style.display = "none";
+        searchBar.classList.remove("expanded");
+        return;
+    }
+    filteredWines = wines.filter(
+        (wine) =>
+            wine.name.toLowerCase().includes(query) ||
+            wine.grape.toLowerCase().includes(query) ||
+            wine.country.toLowerCase().includes(query) ||
+            wine.color.toLowerCase().includes(query)
+    );
+
+    resultsBox.style.display = "block";
+    searchBar.classList.add("expanded");
+
+    if (filteredWines.length > 0) {
+        filteredWines.forEach(wine => {
+            const li = document.createElement("li");
+            li.classList.add("wine-list");
+            li.innerHTML = `<strong>${wine.name}</strong> (${wine.year}) - ${wine.color}, ${wine.country}`;
+            li.onclick = () => {
+                wineContainer.innerHTML = "";
+                displayWineCard(wine);
+                resultsBox.style.display = "none";
+                searchBar.classList.remove("expanded");
+            };
+            resultsBox.appendChild(li);
+        });
+    } else {
+        const notFoundMessage = document.createElement("li");
+        notFoundMessage.classList.add("wine-card", "not-found");
+        notFoundMessage.style.color = "red";
+        notFoundMessage.innerHTML = `<strong>Wine not found!</strong> Try another search.`;
+        resultsBox.appendChild(notFoundMessage);
+    }
+}
+```
 
 ### How to run this project locally 
 

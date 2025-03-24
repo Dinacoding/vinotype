@@ -67,14 +67,14 @@ On desktop, Vinotype web application demonstrates strong performance, scoring a 
 
 - [Desktop](documentation/lIghthouse/lighthouse-desktop.png)
 
-On the phone,  web application showcases strong performance in key areas, as evidenced by the Lighthouse audit. Achieving a perfect 100 in both Best Practices and SEO demonstrates excellent adherence to web development standards and robust search engine optimization.  Accessibility scores a commendable 96, indicating a high level of inclusivity with potential for minor enhancements. While Performance scores 91, it still reflects a well-optimised application with room for further improvements to ensure optimal loading times and user experience. Overall, the Vinotype application demonstrates a solid foundation and a commitment to quality across critical web development metrics.
+On the phone,  web application showcases strong performance in key areas, as evidenced by the Lighthouse audit. Achieving a perfect 100 in both Best Practices and SEO demonstrates excellent adherence to web development standards and robust search engine optimization.  Accessibility scores a solid 96. While Performance scores 91, it still reflects a well-optimised application with room for further improvements to ensure optimal loading times and user experience. Overall, the Vinotype application demonstrates a solid foundation and a commitment to quality across critical web development metrics.
 
 - [Phone](documentation/lighthouse/lighthouse-phone.png)
 
 
 ### JsLint Testing
 
-The JSLint analysis of JavaScript code. The tool has identified several warnings, primarily related to code style and formatting. These include unexpected trailing spaces, lines exceeding 80 characters, and the use of single quotes instead of double quotes. While these warnings suggest areas for improvement in code readability and maintainability, they do not indicate critical errors that would prevent the JavaScript code from functioning. The warnings are stylistic suggestions and best practices, not indicators of broken or compromised functionality. The code's core logic, including DOM manipulation and event handling, remains intact.
+The JSLint analysis of JavaScript code. The tool has identified several warnings, firstly related to code style and formatting. These include unexpected trailing spaces, lines exceeding 80 characters, and the use of single quotes instead of double quotes. While these warnings suggest improvements in code readability and maintainability, they do not indicate or affect critically  JavaScript code from functioning.
 
 - [Jslint](documentation/JSlint.png)
 
