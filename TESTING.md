@@ -28,10 +28,10 @@
 | **Tested On** | **Status** | **Notes** |
 |--------------|-----------|----------|
 | Google Chrome | Passed | Fully functional |
-| Mozilla Firefox | Not passed |  |
-| Microsoft Edge | Not passed |  |
+| Mozilla Firefox | passed | Fully functional |
+| Microsoft Edge | Passed |  |
 | Safari | Passed | Fully functional |
-| Mobile (iOS) | Not Passed | Responsive layout confirmed |
+| Mobile (iOS) | Passed | Responsive layout confirmed |
 
 
 
