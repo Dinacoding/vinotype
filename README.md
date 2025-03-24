@@ -106,12 +106,12 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 - The fetch API allows the application to dynamically load data without reloading the entire page.
 
 * Wine search functionality
-- By Name ![search-name](documentation/features/name-search.png)
-- By Country ![search-name](documentation/features/country.png)
-- By name ![search-name](documentation/features/grape-search.png)
+![search-by-name](documentation/features/name-search.png)
+![search-by-country](documentation/features/country.png)
+![search-by-grape](documentation/features/grape-search.png)
 
 * When the wine is not find is displays a not found message
-- Not found message ![Not found](documentation/features/nofound-message.png)
+![Not found](documentation/features/nofound-message.png)
 
 3. Interactivity
 
