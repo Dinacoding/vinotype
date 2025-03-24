@@ -3,7 +3,6 @@
 ## Table of Contents
 
 1. [Header](#header)
-    - [Subheader](#subheader)
 2. [Table of Contents](#table-of-contents)
 3. [User Experience Ux](#user-experience)
     -  [User Goals](#user-goals)
