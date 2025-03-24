@@ -75,24 +75,58 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 
 1. Navigation bar, responsive for different screen devices and it is position on the top of the webpage. 
 
-- Features the logo on the left 
-- Contains the links on the right.
+* Features the logo on the left 
+* Contains the links on the right.
 
-[Phone](documentation/features/phone-nav.png)
-[Desktop](documentation/features/Screenshot%202025-03-24%20005325.png)
+![Phone](documentation/features/phone-nav.png)
 
-- Menu Toggle functionality
-* Allows users to show or hide the navigation menu when clicking the menu button.
-[toggle](documentation/features/toggle.png)
+![Desktop](documentation/features/Screenshot%202025-03-24%20005325.png)
+
+* Menu Toggle functionality
+-  Allows users to show or hide the navigation menu when clicking the menu button.
+
+![toggle](documentation/features/toggle.png)
+
 * When clicked a menu drops down
+
 [menu](documentation/features/Screenshot%202025-03-18%20074201.png)
 
 2. Search bar, it is on the content area in the Hero Section 
+![Search-Bar](documentation/features/search-bar.png)
 
-- It allows the user to search for the wine using the name, the region or information about the wine.
+* It allows the user to search for the wine using the name, the region or information about the wine.
+- Users can type keywords into a search box.
+- The application then filters the wine data to find wines that match the user's input.
+
 - It provides a quick and easy way to find the information
+- Displays search results dynamically with filtering in a dropdown list
 
-3. Wine and Regions Card
+* Fetches wine data from a wines.json file.
+- The application retrieves wine information from an external file named "wines.json".
+- The fetch API allows the application to dynamically load data without reloading the entire page.
+
+* Wine search functionality
+- By Name ![search-name](documentation/features/name-search.png)
+- By Country ![search-name](documentation/features/country.png)
+- By name ![search-name](documentation/features/grape-search.png)
+
+* When the wine is not find is displays a not found message
+- Not found message ![Not found](documentation/features/nofound-message.png)
+
+3. Interactivity
+
+* Hides the result box and clears the search when clicking outside the search bar
+
+- Improves usability by automatically closing the search results when the user clicks elsewhere on the page
+- Includes a clear button to reset the search and a search button that brings the wine cards
+
+![functionality](documentation/results/functionality-buttons/png)
+
+
+
+
+
+4. Wine and Regions Card
 - Interactive images allow users to navigate directly to specific categories with a single click.
 - By clicking on an image, users are seamlessly directed to the corresponding category page, either the wine or region.
 
