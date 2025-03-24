@@ -199,7 +199,8 @@ The HTML and CSS components of the Vinotype web application were subjected to ri
 - Language Content Availability: Ensure that you have all necessary content translated and ready for the languages you support.
 
 
-
+### Testing 
+Please follow this link [TESTING.md](https://vscode.dev/github/Dinacoding/vinotype/blob/main/TESTING.md).
 
 ### How to run this project locally 
 
