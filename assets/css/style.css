@@ -173,6 +173,7 @@ h1 {
   position: relative;
   scroll-snap-align: start;
   gap:10px;
+  z-index: 11;
 }
 
 .wine-card h2 {
