@@ -16,7 +16,7 @@ const clearButton = document.getElementById("clear-button");
 const wineContainer = document.getElementById("wine-container");
 
 let wines = [];
-let filteredWines = [];
+let filteredWines = [];D
 
 // Fetch wine data from the wines.json
 fetch("wines.json")

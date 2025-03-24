@@ -76,7 +76,16 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 1. Navigation bar, responsive for different screen devices and it is position on the top of the webpage. 
 
 - Features the logo on the left 
-- Contains the links for the wines on the right.
+- Contains the links on the right.
+
+[Phone](documentation/features/phone-nav.png)
+[Desktop](documentation/features/Screenshot%202025-03-24%20005325.png)
+
+- Menu Toggle functionality
+* Allows users to show or hide the navigation menu when clicking the menu button.
+[toggle](documentation/features/toggle.png)
+* When clicked a menu drops down
+[menu](documentation/features/Screenshot%202025-03-18%20074201.png)
 
 2. Search bar, it is on the content area in the Hero Section 
 
