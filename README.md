@@ -126,7 +126,7 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 - Improves usability by automatically closing the search results when the user clicks elsewhere on the page
 - Includes a clear button to reset the search and a search button that brings the wine cards
 
-![functionality](documentation/results/functionality-buttons/png)
+![functionality](documentation/results/functionality-buttons.png)
 
 
 
