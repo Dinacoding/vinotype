@@ -12,8 +12,9 @@
 6. [Wireframes](#wizard-adventures)
 7. [Designer Choices](#designer-choices)
 8. [Technology Used](#technology-used)
-9. [How to run the project locally](#how-to-run-this-project-locally)
-10. [To clone this project](#to-clone-this-project-from-github)
+9. [Bugs](#bugs)
+10. [How to run the project locally](#how-to-run-this-project-locally)
+11. [To clone this project](#to-clone-this-project-from-github)
 
 
 
