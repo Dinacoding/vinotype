@@ -129,12 +129,13 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 ![functionality](documentation/features/functionality-buttons.png)
 
 
-
-
-
 4. Wine and Regions Card
-- Interactive images allow users to navigate directly to specific categories with a single click.
-- By clicking on an image, users are seamlessly directed to the corresponding category page, either the wine or region.
+
+* Generates detailed wine cards dynamically.
+* Includes wine image, name, year, color, country, tasting notes, and pairing suggestions.
+![Winecard](documentation/features/wine-card.png)
+* Adds a close button to remove the wine card.
+![Closing-Button](documentation/features/closing-button.png)
 
 
 ## Wireframes
@@ -169,8 +170,6 @@ This color scheme summons the world of wine and  creates a sophisticated user ex
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), for structure and content writting;
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), for styling and some visual effects;
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), for interactive elements, dynamic behavior, and enhancing user experience.
-- [Bootstrap](https://getbootstrap.com/), help me with the structuration and with the layout planning;
-- [GoogleFonts](https://fonts.google.com/), use to import the fonts into my project;
 - [Inkscape](https://inkscape.org/), to design the logo;
 - [Balsamiq](https://balsamiq.com/), used it to wireframe the webpages;
 - [ChatGPT](https://chatgpt.com/), to use it to create content for the website and get me a color palette 
