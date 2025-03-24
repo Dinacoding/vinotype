@@ -111,7 +111,7 @@ Vinotype ensures a smooth functionality. The website will be deployed via GitHub
 
 ![search-by-name](documentation/features/name-search.png)
 
-![search-by-country](documentation/features/country.png)
+![search-by-country](documentation/features/country-search.png)
 
 ![search-by-grape](documentation/features/grape-search.png)
 
