@@ -269,7 +269,6 @@ Please follow this link [Click Here](TESTING.md) to view the full testing steps 
 - **Inconsistent Search Bar Positioning**: The search bar placement varies in different views.
 ![search-bar](documentation/bugs/results-box.png)
 ![search-bar](documentation/bugs/results-box1.png)
-![search-bar](documentation/bugs/results-box2.png)
 
 **How I fixed it:**
 
@@ -299,7 +298,67 @@ Please follow this link [Click Here](TESTING.md) to view the full testing steps 
 
 
 - **Lack of Search Filtering**: No clear categorization of search results.
+![results](documentation/bugs/results.png)
 
+**How I fixed it:**
+``` JavaScript
+function searchWines() {
+    console.log("Search button clicked!");
+    const query = searchInput.value.toLowerCase();
+    resultsBox.innerHTML = "";
+
+    if (query.trim() === "") {
+        resultsBox.style.display = "none";
+        searchBar.classList.remove("expanded");
+        return;
+    }
+    filteredWines = wines.filter(
+        (wine) =>
+            wine.name.toLowerCase().includes(query) ||
+            wine.grape.toLowerCase().includes(query) ||
+            wine.country.toLowerCase().includes(query) ||
+            wine.color.toLowerCase().includes(query)
+    );
+
+    resultsBox.style.display = "block";
+    searchBar.classList.add("expanded");
+
+    if (filteredWines.length > 0) {
+        filteredWines.forEach(wine => {
+            const li = document.createElement("li");
+            li.classList.add("wine-list");
+            li.innerHTML = `<strong>${wine.name}</strong> (${wine.year}) - ${wine.color}, ${wine.country}`;
+            li.onclick = () => {
+                wineContainer.innerHTML = "";
+                displayWineCard(wine);
+                resultsBox.style.display = "none";
+                searchBar.classList.remove("expanded");
+            };
+            resultsBox.appendChild(li);
+        });
+    } else {
+        const notFoundMessage = document.createElement("li");
+        notFoundMessage.classList.add("wine-card", "not-found");
+        notFoundMessage.style.color = "red";
+        notFoundMessage.innerHTML = `<strong>Wine not found!</strong> Try another search.`;
+        resultsBox.appendChild(notFoundMessage);
+    }
+}
+```
+
+- The searchWines() function is responsible for handling the search functionality in the Vinotip wine discovery platform. Here’s what it does step by step:
+
+1. Logs the Search Action - when the button is clicked it 
+2. Retrieves and Processes the Search Query - The function takes the value from the search input field
+3. If the search input is empty it hides the results box and collapses the search bar
+4. Filters the Wine List
+    - grape
+    - country
+    - color 
+    - name 
+5. Displays Search Results
+    - The resultsBox is displayed and the function creates a <li> element for each matching wine, displaying its name, year, color, and country.
+6. Handles No Results - <strong>Wine not found!</strong> Try another search.
 
 
 
