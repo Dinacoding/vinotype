@@ -9,7 +9,7 @@
     -  [User Story](#user-stories)
 4. [Planning](#planning)
 5. [Features](#features)
-6. [Wireframes](#wizard-adventures)
+6. [Wireframes](#wireframes)
 7. [Designer Choices](#designer-choices)
 8. [Technology Used](#technology-used)
 9. [Bugs](#bugs)
@@ -369,7 +369,7 @@ function searchWines() {
 }
 ```
 
-- The searchWines() function is responsible for handling the search functionality in the Vinotip wine discovery platform. Here’s what it does step by step:
+- The searchWines() function is responsible for handling the search functionality in the Vinotype wine discovery platform. Here’s what it does step by step:
 
 1. Logs the Search Action - when the button is clicked it 
 2. Retrieves and Processes the Search Query - The function takes the value from the search input field
