@@ -1,6 +1,19 @@
 
 ## Testing
 
+
+## Table of Contents
+
+1.[Table of Contents](#table-of-contents)
+2. [Functionaly Testing](#functionality-testing)
+3. [Responsiveness & Cross-Browser Compatibility](#responsiveness--cross-browser-compatibility)
+4. [Performance & Accessibility Testing](#performance--accessibility-testing)
+5. [JsHint ](#jshint)
+6. [Manual Testing](#manual-testing)
+7. [Lighthouse](#lighthouse)
+8. [JsLint Testing](#jslint-testing)
+
+
 ### Functionality testing
 
 | **Description of Test**                                           | **Passed (Yes/No)** | **Notes or Comments**                         |
