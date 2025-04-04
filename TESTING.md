@@ -60,6 +60,16 @@ The code has been tested and successfully passes JSHint without any critical iss
 ![JSHint](documentation/browser-testing/testing-3.png)
 ![JSHint](documentation/browser-testing/testing-4.png)
 
+### Manual Testing
+
+To performe a comprehensive manual evalutation of the Vinotype website, it is important to start assessing its navigation functionality. Firstly, ensure that the logo within the header redirects users to the homepage, secondly the toggle button should be tested to ensute it propertly expands and collapses the navigation links. To assess the website's responsiveness, its interface should be tested on different screen sizes and devices. This involves verifying that the layout adapts based on already defined CSS media query breakpoints. At last, a comprehensive review of the color scheme and design consistency is essential to ensure that background images, text colors, and other visual elements align with the intended design specifications.
+
+The wine search functionality must be tested. Users should be able to input the on the search bar to generate the search, such as wine names, countries, and grape varieties, into the search bar, and the displayed results should update in real time. Explore more possible test cases, including empty inputs, partial matches, and non-existent wines and check if the system provides an appropriate feedback, such as a "Wine not found!" notification when necessary. Clicking on a search result should display the corresponding wine card, which presents key details, including the name, vintage (year), color, country of origin, description, tasting notes, and recommended food pairings.
+
+Test must be conducted to validate that the close button effectively removes the wine card from view and that the "Clear" button resets the search input while it conceals the results box. Throughout the process, it is necessary to inspect the browser console for any unexpected errors or warnings that could indicate technical issues.
+
+To sum up, this manual testing will result in a fully operational website that provides a seamless user experience.
+
 
 ### Lighthouse
 
