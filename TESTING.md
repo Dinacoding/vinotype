@@ -10,8 +10,9 @@
 4. [Performance & Accessibility Testing](#performance--accessibility-testing)
 5. [JsHint ](#jshint)
 6. [Manual Testing](#manual-testing)
-7. [Lighthouse](#lighthouse)
-8. [JsLint Testing](#jslint-testing)
+7. [Automated Testing](#automated-testing)
+8. [Lighthouse](#lighthouse)
+9. [JsLint Testing](#jslint-testing)
 
 
 ### Functionality testing
@@ -81,6 +82,15 @@ The wine search functionality must be tested. Users should be able to input the 
 Test must be conducted to validate that the close button effectively removes the wine card from view and that the "Clear" button resets the search input while it conceals the results box. Throughout the process, it is necessary to inspect the browser console for any unexpected errors or warnings that could indicate technical issues.
 
 To sum up, this manual testing will result in a fully operational website that provides a seamless user experience.
+
+### Automated Testing
+
+Automated testing is essential for maintaining the reliability and the quality of the code. Using the software tools we ensure the Vinotype application works perfectly across various scenarios. To execute tests and compare the results up against expected outcomes. Tests will verify that the function searchWines() returns the correct wines for the different search queries, it covers cases like misspelings or partial matches and that displayWineCard() function accurately gives wine information, such as names, years, and descriptions, along with associated images and tasting notes by fecthing the data on the wine.json.
+
+It is highly suggested that you develop the testing while building the application, it helps prevent potential bugs early, ensures smoother integration of components and reduces the time spent debugging later in the development cycle.
+
+Futhermore, automation extents to user interactions and confirms that elements like the search and clear buttons trigger the expected behaviour. The approach does not only provides repeatable, consistent testing and allows early stages of defecting
+Integrating automated testing into the development workflow enables continuous integration, where tests are executed with each code change, ensuring that new updates do not introduce regressions and maintaining a stable, high-quality application.
 
 
 ### Lighthouse
